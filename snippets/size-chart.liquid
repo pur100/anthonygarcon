@@ -1,0 +1,31 @@
+                  {% if product.type == "Coupe Paris" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'paris' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Coupe London" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'london' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Coupe Napoli" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'napoli' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Coupe New York" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'new-york' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Smoking col châle" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'smoking-col-chale' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Smoking col pointe" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'smoking-col-pointe' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Veste" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'vestes' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Chemise regular" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'chemise-regular' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% elsif product.type == "Chemise slim" %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'chemise-slim' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+                  {% else %}
+                  {%- assign size_chart_page_handle = settings.size_chart_page | default: 'size-chart' -%}
+                  {%- assign size_chart_page = pages[size_chart_page_handle] -%}
+				  {% endif %}	  

@@ -1,0 +1,218 @@
+{% if section.blocks.size > 0 %}
+  <style>
+    #shopify-section-{{ section.id }}{background-color: {{ section.settings.background_color }};}
+    #shopify-section-{{ section.id }} .highlights-banners {
+      background-color: {{ section.settings.inner_background_color }};
+      padding-top: {{ section.settings.section_spacing_mobile }}px;
+      padding-bottom: {{ section.settings.section_spacing_mobile }}px;
+      text-align: {{ section.settings.text_alignment }};
+    }
+    @media screen and (min-width: 769px) {
+      #shopify-section-{{ section.id }} .highlights-banners {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #shopify-section-{{ section.id }} .highlights-banners .flickity-slider>.highlights-banners-block {
+        width: 180px;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      #shopify-section-{{section.id}} .highlights-banners {
+        padding-top: {{ section.settings.section_spacing_desktop }}px;
+        padding-bottom: {{ section.settings.section_spacing_desktop }}px;
+      }
+    }
+    #shopify-section-{{ section.id }} .highlights-banners-block {color: {{ section.settings.color }};}
+    #shopify-section-{{ section.id }} .highlights-banners-heading {color: {{ section.settings.heading_color }};}
+    #shopify-section-{{ section.id }} .highlights-banners-block::after {background: {{ section.settings.dividers_color }};}
+  </style>
+  <div class="highlights-banners-container">
+    <div class="highlights-banners">
+      {% for block in section.blocks %}
+        {% if block.settings.text != blank or block.settings.title != blank %}
+          <a href="{{ block.settings.link }}" class="highlights-banners-block" {{ block.shopify_attributes }}>
+            {% capture block_icon %}
+              {% if block.settings.image != blank %}
+                <div class="highlights-banners-icon">{{ block.settings.image | img_url: 'master' | img_tag }}</div>
+              {% endif %}
+            {% endcapture %}
+            {% unless section.settings.text_alignment == 'right' %}{{ block_icon }}{% endunless %}
+            <div class="highlights-banners-text">
+              {% if block.settings.title != blank %}
+                <span class="highlights-banners-heading">{{ block.settings.title | escape }}</span>
+              {% endif %}
+              {% if block.settings.text != blank %}{{ block.settings.text }}{% endif %}
+            </div>
+            {% if section.settings.text_alignment == 'right' %}{{ block_icon }}{% endif %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <script>
+    if (window.innerWidth < 769){
+      window.addEventListener('DOMContentLoaded', function(){
+        const config{{ section.id }} = {
+          autoPlay: 0,
+          accessibility: true,
+          cellAlign: 'center',
+          cellSelector: '.highlights-banners-block',
+          pageDots: false,
+          prevNextButtons: false,
+          contain: true
+        }
+        const hlf{{ section.id }} = new Flickity(document.querySelector('div#shopify-section-{{ section.id }} div.highlights-banners'), config{{ section.id }});
+      });
+    }
+  </script>
+{% endif %}
+{% schema %}
+{
+  "name": "Highlights banner",
+  "class": "highlights-banners--section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background color",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_desktop",
+      "label": "Desktop section spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_mobile",
+      "label": "Mobile section spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type":      "select",
+      "id":        "text_alignment",
+      "label":     "Banner text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default":   "left"
+   },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "id": "heading_color",
+      "type": "color",
+      "label": "Banner headings",
+      "default": "#4d4d4d"
+    },
+    {
+      "id": "color",
+      "type": "color",
+      "label": "Banner text",
+      "default": "#4d4d4d"
+    },
+    {
+      "id": "dividers_color",
+      "type": "color",
+      "label": "Dividers",
+      "default": "#e3e3e3"
+    },
+    {
+      "id": "inner_background_color",
+      "type": "color",
+      "label": "Background",
+      "default": "#f8f8f8"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "name": "Highlight",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image",
+          "info": "50x50 recommended. Uploading an image will override any icon selected above."
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "Text"
+        },
+        {
+          "id": "link",
+          "type": "url",
+          "label": "Link"
+        }
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Highlights banner",
+      "category": "Store information",
+      "blocks": [
+        {
+          "type": "highlight",
+          "settings": {
+            "title": "Free shipping",
+            "text": "<p>When you spend $100+</p>"
+          }
+        },
+        {
+          "type": "highlight",
+          "settings": {
+            "title": "Give us a call",
+            "text": "<p>+1 (201) 555-5555</p>"
+          }
+        },
+        {
+          "type": "highlight",
+          "settings": {
+            "title": "Chat with us",
+            "text": "<p>We offer 24-hour chat support</p>"
+          }
+        },
+        {
+          "type": "highlight",
+          "settings": {
+            "title": "Locations",
+            "text": "<p>Find a store near you</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
