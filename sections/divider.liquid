@@ -1,0 +1,29 @@
+<div class="divider" style="width: 100%; height: {{section.settings.height}}px;">
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Divider",
+  "settings": [
+
+    {
+      "type": "range",
+      "min": 0,
+      "max": 1000,
+      "step": 25,
+      "default": 100,
+      "id": "height",
+      "label": "Height"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Divider",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

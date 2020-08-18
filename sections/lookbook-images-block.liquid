@@ -1,0 +1,64 @@
+{% if section.settings.title %}
+  <h1 style="text-align: center; margin-bottom: 80px">{{ section.settings.title }}</h1>
+{% endif %}
+
+<div class="blockimages">
+  {% for block in section.blocks %}
+    <div class="blockimage" style="">
+      <div class="wrap">
+        <img src="{{ block.settings.image_url }}" alt="">
+        <p>{{block.settings.text_image}}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .blockimages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blockimages > .blockimage {
+    flex: 0 45%;
+  }
+
+  .blockimage {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+</style>
+{% schema %}
+{
+  "name": "Lookbook Images Blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "text_image",
+          "label": "Texte 1"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

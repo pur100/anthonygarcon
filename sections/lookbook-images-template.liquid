@@ -1,0 +1,137 @@
+<div class="container">
+  <section id="section-{{ section.id }}">
+    <div class="image_row">
+      {% if section.settings.image1 != blank %}
+        <div class="image1">
+          <div class="wrap">
+            <img src="{{ section.settings.image1 }}" alt="">
+            <p>{{ section.settings.content1 }}</p>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if section.settings.image2 != blank %}
+        <div class="image2">
+          <div class="wrap">
+            <img src="{{ section.settings.image2 }}" alt="">
+            <p>{{ section.settings.content2 }}</p>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.settings.quote != blank %}
+      <div class="quote">
+        {{ section.settings.quote }}
+      </div>
+    {% endif %}
+
+    <div class="image_row">
+      {% if section.settings.image3 != blank %}
+        <div class="image3">
+          <div class="wrap">
+            <img src="{{ section.settings.image3 }}" alt="">
+            <p>{{ section.settings.content3 }}</p>
+          </div>
+        </div>
+      {% endif %}
+
+
+    </div>
+
+  </section>
+
+</div>
+
+<style>
+  .image_row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+
+  .image1, .image2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .image1 {
+    margin-right: 4%;
+  }
+
+  .image2 {
+    margin-left: 4%;
+  }
+
+  .quote p {
+    margin: 80px 0px;
+    font-size : 50px;
+    text-align: center;
+    font-family: "Garamond";
+    color:#002856;
+  }
+
+</style>
+
+
+{% schema %}
+{
+  "name": "Lookbook Images",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "url",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "url",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "url",
+      "id": "image3",
+      "label": "Image 3"
+    },
+    {
+      "type": "richtext",
+      "id": "content1",
+      "label": "Text image 1",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+    ,
+    {
+      "type": "richtext",
+      "id": "content2",
+      "label": "Text image 2",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "content3",
+      "label": "Text image 3",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "Quote",
+      "default": "<p>Section sous-titre à renseigner au <strong>besoin</strong></p>"
+    }
+  ]
+}
+{% endschema %}

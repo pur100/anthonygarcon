@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="title_container">
+    <div class="content">
+      <p>{{ section.settings.content }}</p>
+    </div>
+    <div class="title">
+      <div class="titles">
+        {% if section.settings.title1 != blank %}
+          <h1>{{ section.settings.title1 }}</h1>
+        {% endif %}
+        {% if section.settings.title2 != blank %}
+          <h1>{{ section.settings.title2 }}</h1>
+        {% endif %}
+        {% if section.settings.title3 != blank %}
+          <h1 style="font-weight: bolder">{{ section.settings.title3 }}</h1>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .title_container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content, .title {
+    width: 48%;
+  }
+
+  .content p {
+    text-align: right;
+    padding-left: 50%;
+  }
+
+  .content {
+    margin-right: 1%;
+  }
+
+  .titles {
+    height: 170px;
+    margin-left: 1%;
+    text-align: left;
+    display: flex;
+    padding: 4% 0%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+
+  .titles h1 {
+    line-height: 10px;
+    margin: 0px !important;
+    font-family: "Garamond";
+    color: #0C335E;
+    font-size: 40px;
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Lookbook Title",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "text",
+      "id": "title1",
+      "label": "Heading 1",
+      "default": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "Heading 2",
+      "default": "automne-hiver"
+    },
+    {
+      "type": "text",
+      "id": "title3",
+      "label": "Heading 3",
+      "default": "2020"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+  ]
+}
+{% endschema %}

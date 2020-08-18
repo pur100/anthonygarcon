@@ -20,7 +20,7 @@
   {%- comment -%}This is the common part to both template{%- endcomment -%}
 
   {%- if collection.products_count > 0 -%}
-    {%- paginate collection.products by section.settings.grid_items_per_page -%}
+    {%- paginate collection.products by 1000 -%}
       <div class="ProductListWrapper">
         <div class="ProductList ProductList--grid {% if paginate.pages > 1 %}ProductList--removeMargin{% endif %} Grid" data-mobile-count="{{ mobile_items_per_row }}" data-desktop-count="{{ desktop_items_per_row }}">
           {%- for product in collection.products -%}
@@ -128,7 +128,7 @@
         </header>
       {%- endif -%}
     {%- endif -%}
-	
+
     {%- assign bs = collection.handle | append: '-bs' -%}
 	{%- if collections[bs] != blank -%}
 	  {%- capture flickity_options -%}
@@ -168,7 +168,7 @@
     	</div>
   	  </section>
 	{%- endif -%}
-    
+
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
     COLLECTION TOOLBAR

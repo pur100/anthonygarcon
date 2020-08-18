@@ -32,8 +32,8 @@
     "currency_conversion_money_format": "money_format",
     "show_page_transition": true,
     "show_button_transition": true,
-    "show_image_zooming": true,
-    "show_element_staggering": true,
+    "show_image_zooming": false,
+    "show_element_staggering": false,
     "search_mode": "product",
     "product_show_price_on_hover": false,
     "product_show_secondary_image": true,
@@ -96,75 +96,45 @@
       "header": {
         "type": "header",
         "blocks": {
-          "1579180294910": {
+          "1597342700843": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "Costumes",
-              "push_1_image": "shopify:\/\/shop_images\/nav_b4850d2c-3946-4e74-b9c0-797c44cce5bd.jpg",
-              "push_1_heading": "Quelle est ma coupe ?",
-              "push_1_subheading": "",
+              "navigation_mega_menu": "Nos coupes",
+              "push_1_image": "shopify:\/\/shop_images\/experience.jpg",
+              "push_1_heading": "Quelle est votre coupe ?",
+              "push_1_subheading": "Cliquez ici pour le découvrir",
               "push_1_url": "shopify:\/\/pages\/questionnaire-coupe",
+              "push_2_image": "shopify:\/\/shop_images\/coversiteok.jpg",
+              "push_2_heading": "Nos coupes en détails",
+              "push_2_subheading": "Cliquez ici pour en savoir plus",
+              "push_2_url": "#"
+            }
+          },
+          "1597343641256": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "E-shop",
+              "push_1_image": "",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
               "push_2_image": "",
-              "push_2_heading": "",
-              "push_2_subheading": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
               "push_2_url": ""
-            }
-          },
-          "1579191264213": {
-            "type": "mega_menu",
-            "settings": {
-              "navigation_mega_menu": "Chemises",
-              "push_1_image": "shopify:\/\/shop_images\/products_nav_shirt2.png",
-              "push_1_heading": "Chemises Blanches – Slim Fit",
-              "push_1_subheading": "",
-              "push_1_url": "shopify:\/\/collections\/chemises-blanches-slim-fit",
-              "push_2_image": "shopify:\/\/shop_images\/products_nav_shirt_blue.png",
-              "push_2_heading": "Chemises Bleues – Slim Fit",
-              "push_2_subheading": "",
-              "push_2_url": "shopify:\/\/collections\/chemises-bleues-slim-fit"
-            }
-          },
-          "1579183177472": {
-            "type": "mega_menu",
-            "settings": {
-              "navigation_mega_menu": "Collection",
-              "push_1_image": "shopify:\/\/shop_images\/cravates.jpg",
-              "push_1_heading": "Cravates",
-              "push_1_subheading": "",
-              "push_1_url": "shopify:\/\/collections\/cravates",
-              "push_2_image": "shopify:\/\/shop_images\/pantalons.jpg",
-              "push_2_heading": "Pantalons",
-              "push_2_subheading": "",
-              "push_2_url": "shopify:\/\/collections\/pantalons"
-            }
-          },
-          "1579372106367": {
-            "type": "mega_menu",
-            "settings": {
-              "navigation_mega_menu": "Carte cadeau",
-              "push_1_image": "shopify:\/\/shop_images\/cartecadeau_magasin.png",
-              "push_1_heading": "Carte cadeau magasin",
-              "push_1_subheading": "À partir de 50 €",
-              "push_1_url": "shopify:\/\/products\/carte-cadeau-magasin",
-              "push_2_image": "shopify:\/\/shop_images\/cartecadeau_eshop.png",
-              "push_2_heading": "Carte cadeau e-shop",
-              "push_2_subheading": "À partir de 50 €",
-              "push_2_url": "shopify:\/\/products\/carte-cadeau"
             }
           }
         },
         "block_order": [
-          "1579180294910",
-          "1579191264213",
-          "1579183177472",
-          "1579372106367"
+          "1597342700843",
+          "1597343641256"
         ],
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/new_logo.png",
           "logo_max_width": 225,
           "mobile_logo_max_width": 150,
-          "navigation_menu": "new-menu-desktop",
+          "navigation_menu": "new-header",
           "navigation_style": "center",
           "show_icons": true,
           "enable_transparent_header": true,
@@ -226,8 +196,10 @@
               "image": "shopify:\/\/shop_images\/coversiteok.jpg",
               "mobile_image": "",
               "apply_overlay": false,
-              "content_position": "middleLeft",
-              "subheading": "The Imitation Game",
+              "left": 300,
+              "top": 480,
+              "content_position": "middleCenter",
+              "subheading": "",
               "title": "NEW IN | SS20",
               "button_1_text": "voir plus",
               "button_1_link": "shopify:\/\/pages\/questionnaire-coupe",
@@ -342,7 +314,7 @@
           "stack_images": true,
           "show_thumbnails": true,
           "enable_image_zoom": true,
-          "tab_page_1_handle": "",
+          "tab_page_1_handle": "recrutement",
           "tab_page_2_handle": "service-client",
           "tab_page_3_handle": "livraison",
           "reviews_enabled": false,
@@ -597,19 +569,6 @@
         ],
         "settings": {}
       },
-      "1596134745438": {
-        "type": "image-with-text-overlay",
-        "settings": {
-          "section_size": "small",
-          "image": "shopify:\/\/shop_images\/fond2.jpg",
-          "text_color": "#ffffff",
-          "overlay_color": "#000000",
-          "overlay_opacity": 30,
-          "subheading": "",
-          "title": "Prêt-à-porter à mesure",
-          "content": "<p>Studio de&nbsp;retouche&nbsp;<strong>d&eacute;di&eacute;<\/strong>&nbsp; |&nbsp; Savoir-faire <strong>fran&ccedil;ais<\/strong>&nbsp; |&nbsp; le<strong> \"fit\"<\/strong> parfait<\/p>"
-        }
-      },
       "1596135313142": {
         "type": "highlights-banners",
         "blocks": {
@@ -693,74 +652,6 @@
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
-        }
-      },
-      "1596135916287": {
-        "type": "slideshow",
-        "blocks": {
-          "1596135916287-0": {
-            "type": "image",
-            "settings": {
-              "tag": "",
-              "image": "shopify:\/\/shop_images\/YVES_LAVALLETTE_K7A7252_copie_27b9cadc-372e-4cfc-b1af-0db60a9d89b6.jpg",
-              "mobile_image": "",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "London Paris",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1596135916287-0"
-        ],
-        "settings": {
-          "show": "all",
-          "show_fullscreen": true,
-          "show_arrow": false,
-          "autoplay": true,
-          "cycle_speed": 5,
-          "text_color": "#ffffff",
-          "button_color": "#363636",
-          "button_background": "#ffffff"
-        }
-      },
-      "1596136323076": {
-        "type": "slideshow",
-        "blocks": {
-          "1596136323076-0": {
-            "type": "image",
-            "settings": {
-              "tag": "",
-              "image": "shopify:\/\/shop_images\/anthonygarcon_ss19_07.jpg",
-              "mobile_image": "",
-              "apply_overlay": true,
-              "content_position": "middleLeft",
-              "subheading": "L'expérience en boutique",
-              "title": "mettez à mesure votre costume dans les 13 magasins de grandes villes France",
-              "button_1_text": "découvrir",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1596136323076-0"
-        ],
-        "settings": {
-          "show": "all",
-          "show_fullscreen": true,
-          "show_arrow": false,
-          "autoplay": true,
-          "cycle_speed": 5,
-          "text_color": "#ffffff",
-          "button_color": "#363636",
-          "button_background": "#ffffff"
         }
       },
       "1596137043205": {
@@ -857,31 +748,123 @@
           "html": "BANDEAU INSTAGRAM CF ERES"
         }
       },
-      "1596463051981": {
-        "type": "image-with-text-overlay",
+      "1597245715551": {
+        "type": "custom-text",
         "settings": {
-          "section_size": "large",
-          "image": "shopify:\/\/shop_images\/YVES_LAVALLETTE_K7A7252_copie_27b9cadc-372e-4cfc-b1af-0db60a9d89b6.jpg",
+          "bg_color": "#2d3447",
+          "border_color": "#ffffff",
+          "subheading": "Studio de retouche dédié  |  Savoir-faire français  |  le \"fit\" parfait",
+          "title": "Prêt à porter sur mesure",
+          "html": ""
+        }
+      },
+      "1597250926754": {
+        "type": "slideshow-coupes",
+        "blocks": {
+          "1597250926754-0": {
+            "type": "image",
+            "settings": {
+              "tag": "",
+              "image": "shopify:\/\/shop_images\/YVES_LAVALLETTE_K7A7252_copie_27b9cadc-372e-4cfc-b1af-0db60a9d89b6.jpg",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "Coupes",
+              "position": 20,
+              "coupe1": "London",
+              "link_coupe1": "shopify:\/\/collections\/coupe-london",
+              "coupe2": "Paris",
+              "link_coupe2": "shopify:\/\/collections\/coupe-paris",
+              "coupe3": "New-York",
+              "link_coupe3": "shopify:\/\/collections\/coupe-new-york",
+              "coupe4": "Naples",
+              "link_coupe4": "shopify:\/\/collections\/coupe-napoli",
+              "coupe5": "",
+              "link_coupe5": "",
+              "button_1_text": "Voir plus",
+              "button_1_link": "shopify:\/\/collections\/all",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1597250926754-0"
+        ],
+        "settings": {
+          "show": "all",
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
           "text_color": "#ffffff",
-          "overlay_color": "#000000",
-          "overlay_opacity": 30,
-          "subheading": "",
-          "title": "coupes",
-          "content": "<p>London<\/p>\n<p>Paris<\/p>\n<p>New-York<\/p>\n<p>Naples<\/p>"
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "1597306880336": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": true,
+          "background": "#002856",
+          "text_color": "#ffffff",
+          "content": "Announce something here, livraison à partir de 300E offerte",
+          "link": ""
+        }
+      },
+      "1597336654037": {
+        "type": "slideshow-xp",
+        "blocks": {
+          "1597336654037-0": {
+            "type": "image",
+            "settings": {
+              "tag": "",
+              "image": "shopify:\/\/shop_images\/experience.jpg",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "picto": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/picto-xp.png?v=1597350516",
+              "subheading": "METTEZ À MESURE VOTRE COSTUME",
+              "subheading2": "DANS LES 13 MAGASINS DES GRANDES",
+              "title": "L'expérience boutique.",
+              "position": 25,
+              "coupe5": "London",
+              "link_coupe5": "",
+              "button_1_text": "Découvrir",
+              "button_1_link": "shopify:\/\/blogs\/news",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1597336654037-0"
+        ],
+        "settings": {
+          "show": "all",
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
         }
       }
     },
     "content_for_index": [
       "slideshow",
       "1596137043205",
-      "1596134745438",
+      "1597245715551",
       "1596135557982",
-      "1596135916287",
+      "1597250926754",
+      "1597306880336",
       "1596137505914",
-      "1596136323076",
+      "1597336654037",
       "1596139158388",
-      "1596135313142",
-      "1596463051981"
+      "1596135313142"
     ]
   },
   "presets": {

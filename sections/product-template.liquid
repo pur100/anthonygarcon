@@ -16,6 +16,7 @@
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
+
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
         <div class="Product__ActionItem hidden-lap-and-up">
@@ -219,15 +220,15 @@
         {%- if tag contains '__with:' -%}
           {%- assign product_handle = tag | split: '__with:' | last -%}
           {%- assign associated_product = all_products[product_handle] -%}
-          
+
           {%- if associated_product != empty -%}
-            <div class="Section Section--spacingNormal">
+            <div class="associated_products Section Section--spacingNormal">
               <header class="SectionHeader SectionHeader--center">
                 <h3 class="SectionHeader__Heading Heading u-h4">{{ 'product.buy_it_with.title' | t }}</h3>
               </header>
-              
+
               {% include 'product-item', product: associated_product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
-              
+
               {%- for tag in product.tags -%}
                 {%- if tag contains '__with2:' -%}
               	  {%- assign product_handle = tag | split: '__with2:' | last -%}

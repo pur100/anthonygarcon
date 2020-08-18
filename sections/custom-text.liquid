@@ -1,0 +1,85 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
+  <div class="">
+    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="SectionHeader SectionHeader--center">
+        <div class="title_container">
+          {%- if section.settings.title != blank -%}
+            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          {%- endif -%}
+
+          <div class="line" style="border-bottom: 1px solid white; width: 80px; margin: 0 auto"></div>
+
+          {%- if section.settings.subheading != blank -%}
+            <h3 class="SectionHeader__SubHeading Heading u-h6" style="margin-block-start: 0.83em;">{{ section.settings.subheading | escape }}</h3>
+          {%- endif -%}
+
+        </div>
+      </header>
+    {%- endif -%}
+  </div>
+</section>
+
+<style>
+  #section-1597245715551 {
+    background-color: {{ section.settings.bg_color }};
+  }
+
+  #section-1597245715551 .SectionHeader--center {
+    border: 1px solid {{ section.settings.border_color }};
+  }
+  #section-1597245715551 h2 {
+    color: {{ section.settings.border_color }};
+  }
+
+  #section-1597245715551 h3 {
+    color: {{ section.settings.border_color }};
+  }
+
+
+
+
+</style>
+
+{% schema %}
+{
+  "name": "Custom Text",
+  "class": "shopify-section-custom-text",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border & text"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your HTML"
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML content",
+      "default": "<p>Write your own custom HTML content.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
