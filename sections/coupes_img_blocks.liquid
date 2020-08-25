@@ -1,0 +1,136 @@
+{% if section.settings.title != blank %}
+  <h1 style="text-align: center; margin-bottom: 80px">{{ section.settings.title }}</h1>
+{% endif %}
+
+<div class="coupes_blocks">
+  {% for block in section.blocks %}
+    <div class="coupes_block tabcontent {% if forloop.first == true %}activecontent{% endif %}" id="{{ block.settings.title_image }}" style="">
+      <div class="coupes_wrap" style="{% if block.settings.image_right == true %}flex-direction: row-reverse;{% endif %}">
+        <div class="coupes_img_wrap{% if block.settings.image_right == true %}right{% endif %}" style="background-image: url({{block.settings.image_url}})"></div>
+
+        <div class="coupes_content_wrap{% if block.settings.image_right == true %}right{% endif %}">
+          <div class="coupes_content" style="margin-top: -100px">
+            <h1 class="coupes_title">Coupe {{block.settings.title_image}}</h1>
+            <p class="coupes_content">{{block.settings.text_image}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+<div class="coupes_nav">
+  <div class="tab">
+    {% for block in section.blocks %}
+          <button class="tablinks {% if forloop.first == true %}active{% endif %} " onclick="openCity(event, '{{block.settings.title_image}}')">Coupe {{block.settings.title_image}}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+  .coupes_block {
+    margin: 100px 0px;
+  }
+
+  .coupes_wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .coupes_content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 10%;
+    text-align: left;
+  }
+
+  .coupes_img_wrap {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin-left: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .activecontent {
+    display: block !important;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+
+
+</style>
+
+<script>
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Coupes Images Blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image 1"
+        },
+        {
+          "type": "html",
+          "id": "title_image",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_image",
+          "label": "Texte"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

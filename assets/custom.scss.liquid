@@ -1,5 +1,26 @@
 // GENERAL
 
+@font-face {
+font-family: 'Gotham';
+font-style: normal;
+font-weight: normal;
+src: url('{{ "Gotham-Book.otf" | asset_url }}');;
+}
+
+// HEADER
+
+.Header__MainNav {
+  .Heading {
+    font-family: 'Gotham';
+  }
+}
+
+.Header__Icon .Icon--cart-desktop {
+    height: 25px !important;
+    width: 21px !important;
+    margin-top: 3px;
+
+}
 
 // HOME
 
@@ -27,7 +48,7 @@
     margin-bottom: 18px;
   }
   h3 {
-    font-family: gotham;
+    font-family: 'Gotham';
     text-transform: uppercase;
     margin-block-start: 1.5em !important;
   }
@@ -52,7 +73,7 @@
 
 #section-1597250926754 {
   .SectionHeader__Heading {
-    font-family: gotham;
+    font-family: 'Gotham';
     text-transform: uppercase;
     font-size: 16px;
   }
@@ -96,7 +117,7 @@
 
 
 // product sliders
-.Section:not(.associated_products) {
+.Section:not(.associated_products), .CollectionInner__Products {
 
 
   .ProductItem__Info{
@@ -135,7 +156,7 @@
         font-size: 55px;
       }
       h3 {
-        font-family: gotham;
+        font-family: 'Gotham';
       }
     }
   }
@@ -150,5 +171,57 @@
         left: 40px;
     }
 
+// marque
+
+  .blockmarque {
+    .wrap {
+      display: flex;
+      min-height: 700px;
+      margin: 100px 0px;
+    }
+  }
 
 
+
+
+// mobile
+
+  @media screen and (max-width: 940px) {
+    .title_container {
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .content, .title {
+        width: 90%;
+        p, .titles {
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+    }
+
+    #section-lookbook-images-template {
+      .image_row {
+        display: block;
+        .image1, .image2 {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .quote p {
+        font-size: 28px;
+      }
+    }
+
+    #section-lookbook-divider-text {
+        height: auto !important;
+        padding: 40px 0px;
+    }
+
+    #shopify-section-lookbook-images-block {
+      .blockimages > .blockimage {
+          flex: initial;
+      }
+    }
+  }

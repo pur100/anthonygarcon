@@ -1,0 +1,119 @@
+{% if section.settings.title != blank %}
+  <h1 style="text-align: center; margin-bottom: 80px">{{ section.settings.title }}</h1>
+{% endif %}
+
+<div class="blockmarques">
+  {% for block in section.blocks %}
+    <div class="blockmarque" style="">
+      <div class="wrap" style="{% if block.settings.image_right == true %}flex-direction: row-reverse;{% endif %}">
+        <div class="img_wrap{% if block.settings.image_right == true %}right{% endif %}"><img src="{{ block.settings.image_url }}" alt=""></div>
+
+        <div class="content_wrap{% if block.settings.image_right == true %}right{% endif %}">
+          <div class="marque_content" style="margin-top: -100px">
+            <h1 class="marque_title">{{block.settings.title_image}}</h1>
+            <p class="marque_content">{{block.settings.text_image}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 10%;
+    text-align: left;
+  }
+
+  .content_wrapright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 10%;
+    text-align: right;
+  }
+
+  .img_wrap {
+    width: 40%;
+    margin-left: 10%;
+    position: relative;
+    height: 600px;
+    background: linear-gradient(90deg, #002956 40%, white 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .img_wrap > img {
+      margin-left: 80px;
+      width: calc(60%);
+  }
+
+  .img_wrapright {
+    width: 40%;
+    margin-right: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    background: linear-gradient(90deg, white 60%, #002956 60%);
+  }
+  .img_wrapright > img {
+      margin-right: 80px;
+      width: calc(60%);
+      align-self: flex-end;
+  }
+
+  .marque_title {
+    font-size: 40px;
+    font-family: "Garamond";
+    margin-bottom: 20px;
+  }
+</style>
+{% schema %}
+{
+  "name": "Coupes Images Blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "image_right",
+          "label": "Image à droite",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image 1"
+        },
+        {
+          "type": "richtext",
+          "id": "title_image",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text_image",
+          "label": "Texte"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
