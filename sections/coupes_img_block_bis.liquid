@@ -11,7 +11,10 @@
         <div class="content_wrap{% if block.settings.image_right == true %}right{% endif %}">
           <div class="marque_content" style="margin-top: -100px">
             <h1 class="marque_title">{{block.settings.title_image}}</h1>
-            <p class="marque_content">{{block.settings.text_image}}</p>
+            <p class="marque_content_inside">{{block.settings.text_image}}</p>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="Button Button--primary">{{ block.settings.link_text }}</a>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -111,6 +114,16 @@
           "type": "richtext",
           "id": "text_image",
           "label": "Texte"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Lien boutton"
+        },
+        {
+          "type": "richtext",
+          "id": "link_text",
+          "label": "Texte boutton"
         }
       ]
     }

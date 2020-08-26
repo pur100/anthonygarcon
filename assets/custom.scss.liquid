@@ -116,6 +116,19 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
 
 
 
+// icons row HP
+
+.highlights-banners-block {
+  .highlights-banners-icon {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .highlights-banners-text {
+    text-align: center;
+  }
+}
+
 // product sliders
 .Section:not(.associated_products), .CollectionInner__Products {
 
@@ -206,6 +219,10 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
         .image1, .image2 {
           width: 100%;
           margin: 0 auto;
+
+          .wrap {
+            margin: 20px 0px;
+          }
         }
       }
 
@@ -222,6 +239,48 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
     #shopify-section-lookbook-images-block {
       .blockimages > .blockimage {
           flex: initial;
+      }
+    }
+
+
+    #shopify-section-coupes_img_block, #shopify-section-coupes_img_block_bis, #shopify-section-coupes_img_blocks, #shopify-section-marque_img_block {
+      .wrap, .coupes_wrap {
+        flex-direction: column !important;
+        margin: 40px 0px;
+        min-height: 0px;
+      }
+
+      .img_wrapright, .img_wrap, .coupes_img_wrap {
+        width: 90%;
+        height: 425px;
+        margin: 0 auto;
+        img {
+          margin: 0px 30px;
+          width: 250px;
+        }
+      }
+
+      .coupes_block {
+        margin: 0px;
+      }
+
+      .coupes_nav {
+        margin-bottom: 70px;
+      }
+
+      .content_wrapright, .content_wrap, .coupes_content_wrap {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        .marque_title {
+          font-size: 30px;
+        }
+
+        .marque_content, .coupes_content {
+          margin-top: 40px !important;
+        }
       }
     }
   }

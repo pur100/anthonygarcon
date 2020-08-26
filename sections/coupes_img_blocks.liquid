@@ -4,14 +4,14 @@
 
 <div class="coupes_blocks">
   {% for block in section.blocks %}
-    <div class="coupes_block tabcontent {% if forloop.first == true %}activecontent{% endif %}" id="{{ block.settings.title_image }}" style="">
+    <div class="coupes_block tabcontent {% if forloop.first == true %}active{% endif %}" id="{{ block.settings.title_image }}" style="{% if forloop.first == true %}display:block;{% endif %}">
       <div class="coupes_wrap" style="{% if block.settings.image_right == true %}flex-direction: row-reverse;{% endif %}">
         <div class="coupes_img_wrap{% if block.settings.image_right == true %}right{% endif %}" style="background-image: url({{block.settings.image_url}})"></div>
 
         <div class="coupes_content_wrap{% if block.settings.image_right == true %}right{% endif %}">
-          <div class="coupes_content" style="margin-top: -100px">
+          <div class="coupes_content" style="">
             <h1 class="coupes_title">Coupe {{block.settings.title_image}}</h1>
-            <p class="coupes_content">{{block.settings.text_image}}</p>
+            <p class="coupes_content_inside">{{block.settings.text_image}}</p>
           </div>
         </div>
       </div>
@@ -33,6 +33,26 @@
 
   .coupes_block {
     margin: 100px 0px;
+  }
+
+  .coupes_nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab > .active {
+    border-bottom: 1px solid black;
+  }
+
+  .tab > button {
+    font-family: "Garamond";
+    padding: 0px 5px;
+    margin: 0px 5px;
+  }
+
+  .coupes_title {
+    font-family: "Garamond";
+    font-size: 40px;
   }
 
   .coupes_wrap {
@@ -61,9 +81,7 @@
     justify-content: space-around;
   }
 
-  .activecontent {
-    display: block !important;
-  }
+
 
   .tabcontent {
     display: none;
