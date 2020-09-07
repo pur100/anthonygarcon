@@ -24,7 +24,7 @@
 <div class="coupes_nav">
   <div class="tab">
     {% for block in section.blocks %}
-          <button class="tablinks {% if forloop.first == true %}active{% endif %} " onclick="openCity(event, '{{block.settings.title_image}}')">Coupe {{block.settings.title_image}}</button>
+          <button class="tablinks {% if forloop.first == true %}active{% endif %} " onclick="openCity(event, '{{block.settings.title_image}}')">{{block.settings.title_image}}</button>
     {% endfor %}
   </div>
 </div>
@@ -32,10 +32,12 @@
 <style>
 
   .coupes_block {
-    margin: 100px 0px;
+    margin: 0px 0px;
   }
 
   .coupes_nav {
+    margin-top: 20px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
   }
@@ -48,6 +50,7 @@
     font-family: "Garamond";
     padding: 0px 5px;
     margin: 0px 5px;
+    font-weight: 900;
   }
 
   .coupes_title {
@@ -80,7 +83,6 @@
     flex-direction: column;
     justify-content: space-around;
   }
-
 
 
   .tabcontent {

@@ -55,10 +55,15 @@
         {%- endcomment -%}
         <div class="tab">
           <button class="tablinks active" onclick="openCity(event, 'Description')">Description</button>
-          <button class="tablinks" onclick="openCity(event, 'Coupes')">Coupes</button>
+          {% for tag in product.tags %}
+            {% if tag  contains "costume" %}
+                <button class="tablinks" onclick="openCity(event, 'Coupes')">Coupes</button>
+            {% endif %}
+          {% endfor %}
           <button class="tablinks" onclick="openCity(event, 'Livraison')">Livraison</button>
           <button class="tablinks" onclick="openCity(event, 'Entretien')">Entretien</button>
         </div>
+
 
         {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
       </div>

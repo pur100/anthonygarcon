@@ -284,7 +284,13 @@ for size, we use it to display a size chart (if applicable)
   </button>
   {%- endif -%}
 
-  <button style="width: 100%; text-align: center" class="what_cut"><a href="https://anthonygarcon.com/pages/questionnaire-coupe">QUELLE EST VOTRE COUPE ?</a></button>
+  {% for tag in product.tags %}
+    {% if tag  contains "costume" %}
+        <button style="width: 100%; text-align: center" class="what_cut"><a href="https://anthonygarcon.com/pages/questionnaire-coupe">QUELLE EST VOTRE COUPE ?</a></button>
+    {% endif %}
+  {% endfor %}
+
+
 
   {%- if section.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
     {{ form | payment_button }}

@@ -340,10 +340,10 @@
 
                 <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
                   <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-                    {{- group | escape -}} <span class="Collapsible__Plus"></span>
+                    {{- group | escape -}} <span style="display: block" class="Collapsible__Plus"></span>
                   </button>
 
-                  <div class="Collapsible__Inner">
+                  <div class="Collapsible__Inner" style="">
                     <div class="Collapsible__Content">
                       <ul class="{% if show_color_swatch %}ColorSwatchList HorizontalList HorizontalList--spacingTight{% else %}Linklist{% endif %}">
                         {%- for tag in collection.all_tags -%}

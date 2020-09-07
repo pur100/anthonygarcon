@@ -12,9 +12,9 @@
     "header_background": "#ffffff",
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
-    "footer_background": "#ffffff",
-    "footer_heading_color": "#5c5c5c",
-    "footer_text_color": "#939393",
+    "footer_background": "#002d72",
+    "footer_heading_color": "#ffffff",
+    "footer_text_color": "#ffffff",
     "navigation_background": "#ffffff",
     "navigation_text_color": "#5c5c5c",
     "newsletter_popup_background": "#002856",
@@ -77,7 +77,7 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "new-menu-mobile",
+          "primary_menu": "new-header",
           "secondary_menu": "new-menu-mobile-secondary",
           "show_social_media": true
         }
@@ -85,7 +85,7 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#002856",
           "text_color": "#ffffff",
@@ -107,21 +107,21 @@
               "push_2_image": "shopify:\/\/shop_images\/coversiteok.jpg",
               "push_2_heading": "Nos coupes en détails",
               "push_2_subheading": "Cliquez ici pour en savoir plus",
-              "push_2_url": "#"
+              "push_2_url": "shopify:\/\/pages\/coupes"
             }
           },
           "1597343641256": {
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "E-shop",
-              "push_1_image": "",
-              "push_1_heading": "Example heading",
-              "push_1_subheading": "Example sub-heading",
+              "push_1_image": "shopify:\/\/shop_images\/nav.jpg",
+              "push_1_heading": "Nouveautés",
+              "push_1_subheading": "découvrez les dernières tendances d'Anthony Garçon",
               "push_1_url": "",
-              "push_2_image": "",
-              "push_2_heading": "Example heading",
-              "push_2_subheading": "Example sub-heading",
-              "push_2_url": ""
+              "push_2_image": "shopify:\/\/shop_images\/Untitled-2.png",
+              "push_2_heading": "Carte cadeau",
+              "push_2_subheading": "offrez la liberté de choisir",
+              "push_2_url": "shopify:\/\/collections\/carte-cadeau"
             }
           }
         },
@@ -163,7 +163,7 @@
           "1596139609609": {
             "type": "links",
             "settings": {
-              "menu": "main-menu-2"
+              "menu": "new-header"
             }
           },
           "1583952209830": {
@@ -302,7 +302,7 @@
           "show_vendor": false,
           "show_sku": false,
           "description_below_add_to_cart": false,
-          "selector_mode": "dropdown",
+          "selector_mode": "block",
           "show_color_swatch": true,
           "show_color_carousel": false,
           "show_quantity_selector": false,
@@ -575,16 +575,16 @@
           "1596135313142-0": {
             "type": "highlight",
             "settings": {
-              "image": "",
-              "title": "Free shipping",
-              "text": "<p>When you spend $100+<\/p>",
+              "image": "shopify:\/\/shop_images\/icons8-handle-with-care-50.png",
+              "title": "Livraison offerte",
+              "text": "<p>d&egrave;s 300 euros d'achat<\/p>",
               "link": ""
             }
           },
           "1596135313142-1": {
             "type": "highlight",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/icons8-card-security-50.png",
               "title": "Give us a call",
               "text": "<p>+1 (201) 555-5555<\/p>",
               "link": ""
@@ -593,7 +593,7 @@
           "1596135313142-2": {
             "type": "highlight",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/icons8-home-address-50.png",
               "title": "Chat with us",
               "text": "<p>We offer 24-hour chat support<\/p>",
               "link": ""
@@ -602,7 +602,7 @@
           "1596135313142-3": {
             "type": "highlight",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/icons8-delivery-time-50.png",
               "title": "Locations",
               "text": "<p>Find a store near you<\/p>",
               "link": ""
@@ -620,10 +620,10 @@
           "section_spacing_desktop": 20,
           "section_spacing_mobile": 10,
           "text_alignment": "left",
-          "heading_color": "#4d4d4d",
-          "color": "#4d4d4d",
+          "heading_color": "#313231",
+          "color": "#313231",
           "dividers_color": "#e3e3e3",
-          "inner_background_color": "#f8f8f8"
+          "inner_background_color": "#e9edf2"
         }
       },
       "1596135557982": {
@@ -751,7 +751,7 @@
       "1597245715551": {
         "type": "custom-text",
         "settings": {
-          "bg_color": "#2d3447",
+          "bg_color": "#002856",
           "border_color": "#ffffff",
           "subheading": "Studio de retouche dédié  |  Savoir-faire français  |  le \"fit\" parfait",
           "title": "Prêt à porter sur mesure",
@@ -810,7 +810,7 @@
           "home_page_only": true,
           "background": "#002856",
           "text_color": "#ffffff",
-          "content": "Announce something here, livraison à partir de 300E offerte",
+          "content": "LIVRAISON OFFERTE DES 300 EUROS D'ACHAT",
           "link": ""
         }
       },
@@ -852,6 +852,279 @@
           "button_color": "#363636",
           "button_background": "#ffffff"
         }
+      },
+      "lookbook-title-template": {
+        "type": "lookbook-title-template",
+        "settings": {
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "title1": "Collection",
+          "title2": "automne-hiver",
+          "title3": "2020",
+          "content": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop <strong>publishing<\/strong> software like Aldus <strong>PageMaker<\/strong> including versions of Lorem Ipsum.<\/p>"
+        }
+      },
+      "lookbook-images-template": {
+        "type": "lookbook-images-template",
+        "settings": {
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/YVES_LAVALLETTE_K7A7252_copie.jpg?v=1591876844",
+          "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_4.jpg?v=1583947609",
+          "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/pantalons.jpg?v=1583949036",
+          "content1": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "content2": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "content3": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "quote": "<p>\"Section sous-titre &agrave; renseigner au <strong>besoin.\"<\/strong><\/p>"
+        }
+      },
+      "lookbook-divider-text": {
+        "type": "lookbook-divider-text",
+        "settings": {
+          "enable_bar": true,
+          "height": 190,
+          "background": "#002856",
+          "text_color": "#ffffff",
+          "title": "<p>This here is the <strong>title<\/strong><\/p>",
+          "content": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus. ”",
+          "link": ""
+        }
+      },
+      "lookbook-images-block": {
+        "type": "lookbook-images-block",
+        "blocks": {
+          "1597683155963": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_3.jpg?v=1583947594",
+              "text_image": "London cut, lorem ipsum factored phalum"
+            }
+          },
+          "1597683362020": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/hp.jpg?v=1583947121",
+              "text_image": ""
+            }
+          },
+          "1597683848527": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_desk.jpg?v=1583949284",
+              "text_image": ""
+            }
+          },
+          "1597683864842": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_3.jpg?v=1583947594",
+              "text_image": ""
+            }
+          },
+          "1597684286278": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/chemise.jpg?v=1584031664",
+              "text_image": "Lorem Ipsum, chemise low cuts"
+            }
+          }
+        },
+        "block_order": [
+          "1597683155963",
+          "1597683362020",
+          "1597683848527",
+          "1597683864842",
+          "1597684286278"
+        ],
+        "settings": {
+          "title": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        }
+      },
+      "marque_img_block": {
+        "type": "marque_img_block",
+        "blocks": {
+          "1598265308938": {
+            "type": "image",
+            "settings": {
+              "image_right": true,
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
+              "title_image": "<p>L'exception <strong>Anthony Gar&ccedil;on<\/strong><\/p>",
+              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+            }
+          },
+          "1598268192943": {
+            "type": "image",
+            "settings": {
+              "image_right": false,
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_mob.jpg?v=1583949321",
+              "title_image": "<p>L'autre <strong>exception<\/strong><\/p>",
+              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+            }
+          },
+          "1598428039201": {
+            "type": "image",
+            "settings": {
+              "image_right": true,
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_mob.jpg?v=1583949321",
+              "title_image": "<p>Titre 3<\/p>",
+              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598265308938",
+          "1598268192943",
+          "1598428039201"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "coupes_img_block": {
+        "type": "coupes_img_block",
+        "blocks": {
+          "1598349901982": {
+            "type": "image",
+            "settings": {
+              "image_right": true,
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
+              "title_image": "<p>L'exception&nbsp;<strong>Anthony Gar&ccedil;on<\/strong><\/p>",
+              "text_image": "<p>Avoir quatre coupes qui assurent un fit parfait.<br><br>Paragraphe d&rsquo;explications concernant la diff&eacute;renciantion<br> d&rsquo;Anthony Gar&ccedil;on par rapport aux autres marques.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598349901982"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "coupes_img_blocks": {
+        "type": "coupes_img_blocks",
+        "blocks": {
+          "1598350403662": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AGcalvi.jpg?v=1591785103",
+              "title_image": "Paris",
+              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+            }
+          },
+          "1598350445919": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_newyork_mob.jpg?v=1583949406",
+              "title_image": "London",
+              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+            }
+          },
+          "1598350466524": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_paris_mob.jpg?v=1583949160",
+              "title_image": "Napoli",
+              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+            }
+          },
+          "1598441831741": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AGcalvi.jpg?v=1591785103",
+              "title_image": "New-York",
+              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598350403662",
+          "1598350445919",
+          "1598350466524",
+          "1598441831741"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "coupes_img_block_bis": {
+        "type": "coupes_img_block_bis",
+        "blocks": {
+          "1598349972250": {
+            "type": "image",
+            "settings": {
+              "image_right": true,
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
+              "title_image": "<p>Trouvez votre coupe<\/p>",
+              "text_image": "<p>Br&egrave;ve explication du questionnaire en quelques mots, <br>introduction et liens vers la page questionnaire directement :<\/p>",
+              "link": "shopify:\/\/pages\/questionnaire-coupe",
+              "link_text": "<p>Faire le questionnaire<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598349972250"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1598442624831": {
+        "type": "timeline",
+        "blocks": {
+          "1598442624831-0": {
+            "type": "item",
+            "settings": {
+              "image": "",
+              "apply_overlay": true,
+              "title": "New York",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "1598442624831-1": {
+            "type": "item",
+            "settings": {
+              "image": "",
+              "apply_overlay": true,
+              "title": "Paris",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "1598442624831-2": {
+            "type": "item",
+            "settings": {
+              "image": "",
+              "apply_overlay": true,
+              "title": "London",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "1598442645749": {
+            "type": "item",
+            "settings": {
+              "image": "",
+              "apply_overlay": true,
+              "title": "Napoli",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598442624831-0",
+          "1598442624831-1",
+          "1598442624831-2",
+          "1598442645749"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
       }
     },
     "content_for_index": [
@@ -864,7 +1137,8 @@
       "1596137505914",
       "1597336654037",
       "1596139158388",
-      "1596135313142"
+      "1596135313142",
+      "1598442624831"
     ]
   },
   "presets": {

@@ -127,7 +127,7 @@
           {%- endcapture -%}
 
           {%- if slideshow_content != blank -%}
-            <div style="width: auto; left:10%; bottom: {{ block.settings.position }}% !important" class="Slideshow__Content slideshow_coupes Slideshow__Content--{{ block.settings.content_position }}">
+            <div style="z-index: 100;width: auto; left:10%; bottom: {{ block.settings.position }}% !important" class="Slideshow__Content slideshow_coupes Slideshow__Content--{{ block.settings.content_position }}">
               <header class="SectionHeader" style="display: flex;
     flex-direction: column;
     justify-content: space-around;
