@@ -21,7 +21,7 @@
       "password_input": "Mot de passe",
       "password_submit": "Valider",
       "newsletter_input": "Adresse e-mail",
-      "newsletter_submit": "Me notifier",
+      "newsletter_submit": "Prévenez-moi",
       "newsletter_success": "Merci pour votre inscription !",
       "powered_by_html": "Cette boutique sera propulsée par {{shopify_link}}",
       "login_title": "Êtes-vous le gérant ?",
@@ -164,8 +164,8 @@
       "manage_addresses": "Gérer les adresses"
     },
     "login": {
-      "title": "Le saviez-vous ?",
-      "description": "En vous connectant à votre compte client, vous bénéficierez d'une expérience personnalisée selon votre coupe de costume et votre taille.",
+      "title": "Facilitez-vous les choses !",
+      "description": "En vous connectant à votre compte client, vous pourrez obtenir le suivi et l'historique de vos commandes.",
       "email": "Email",
       "password": "Mot de passe",
       "forgot": "Mot de passe oublié ?",
@@ -291,7 +291,7 @@
   },
   "product": {
     "labels": {
-      "sold_out": "Rupture",
+      "sold_out": "Bientôt disponible",
       "on_sale": "En solde"
     },
     "slideshow": {
@@ -318,7 +318,7 @@
         "other": "Seulement {{count}} exemplaires en stock !"
       },
       "add_to_cart": "Ajouter au panier",
-      "sold_out": "Rupture",
+      "sold_out": "Bientôt disponible",
       "pre_order": "Pré-commander",
       "unavailable": "Indisponible",
       "view_info": "En savoir plus",

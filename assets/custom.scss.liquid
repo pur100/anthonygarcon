@@ -1,27 +1,66 @@
 // GENERAL
 
 @font-face {
-font-family: 'Gotham';
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: normal;
-src: url('{{ "Gotham-Book.otf" | asset_url }}');;
+src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
 }
+
+// body {
+//   font-family: "Montserrat";
+//   font-weight: lighter !important;
+// }
 
 // HEADER
 
 // .Header{
 //   background-color: transparent !important;
 // }
+#section-footer, #section-1599648067230 {
+  .u-h6 {
+    font-size: 18px !important;
+  }
+}
+
+.ProductMeta__Title {
+  font-size: 18px !important;
+}
+
 
 .MegaMenu {
   width: auto !important;
   left: 50%;
   transform: translate(-50%, -0%);
+
+  .MegaMenu__Title {
+    color: #5c5c5c !important;
+   }
+  .MegaMenu__Title:hover {
+     color: #939393 !important;
+  }
+
 }
+
+
+
+.HorizontalList__Item {
+  padding-bottom: 2px;
+}
+
+.Header--transparent {
+  .HorizontalList__Item > a:hover {
+    padding-bottom: 5px;
+    border-bottom: solid 1px white;
+  }
+}
+
 
 .Header__MainNav {
   .Heading {
-    font-family: 'Gotham';
+    font-family: 'Montserrat';
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 }
 
@@ -43,9 +82,9 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
   }
 }
 
-.slide1_content, .slideshow_coupes {
+.slide1_content {
   h2 {
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
 }
 
@@ -64,7 +103,7 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
     margin-bottom: 18px;
   }
   h3 {
-    font-family: 'Gotham';
+    font-family: 'Montserrat';
     text-transform: uppercase;
     margin-block-start: 1.5em !important;
   }
@@ -82,7 +121,7 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
 // announcement
 
 .AnnouncementBar__Content {
-  font-family: "Gotham";
+  font-family: "Montserrat";
 }
 
 
@@ -94,11 +133,14 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
 }
 
 #section-1597250926754 {
+  .Image--contrast::after {
+     background-image: none;
+  }
   .SectionHeader__Heading {
-    font-family: 'Gotham';
+    font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 16px;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
   h4 {
     margin-block-start: 0px;
@@ -107,7 +149,7 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
   h4 a {
     font-family: "Garamond";
     font-size: 40px;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
 
   .SectionHeader__ButtonWrapper {
@@ -158,6 +200,10 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
 }
 
 // product sliders
+
+.ProductItem__Info {
+  font-size: 13px !important;
+}
 .Section:not(.associated_products), .CollectionInner__Products {
 
 
@@ -197,7 +243,7 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
         font-size: 55px;
       }
       h3 {
-        font-family: 'Gotham';
+        font-family: 'Montserrat';
       }
     }
   }
@@ -222,11 +268,22 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
     }
   }
 
+// réassurance
+
+#shopify-section-1596135313142 .highlights-banners-block {
+    width: 33.33333%;
+}
 
 //
 
 .Image--fadeIn {
   transition: none !important;
+}
+
+#section-1599648067230 {
+  padding-top: 36px;
+  height: 10px;
+  padding-bottom: 20px;
 }
 
 // mobile
@@ -276,8 +333,16 @@ src: url('{{ "Gotham-Book.otf" | asset_url }}');;
     }
 
     #section-lookbook-images-template {
+      .image3 {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
+    #section-lookbook-images-template {
       .image_row {
         display: block;
+
         .image1, .image2 {
           width: 100%;
           margin: 0 auto;

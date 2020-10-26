@@ -91,7 +91,7 @@
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
-              <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | escape }}</h2>
+              <h2 style="font-size:{{ block.settings.title_size }}px" class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | escape }}</h2>
             {%- endif -%}
 
             {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
@@ -101,7 +101,7 @@
             {%- endif -%}
 
             {%- if block.settings.button_1_text != blank or block.settings.button_2_text != blank -%}
-              <div class="SectionHeader__ButtonWrapper">
+              <div class="">
                 <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
                   {%- if block.settings.button_1_text != blank -%}
                     <a href="{{ block.settings.button_1_link }}" class="ButtonGroup__Item Button">{{ block.settings.button_1_text | escape }}</a>
@@ -117,9 +117,7 @@
 
           {%- if slideshow_content != blank -%}
             <div class="Slideshow__Content Slideshow__Content--{{ block.settings.content_position }}" style="width: auto; left: {{ block.settings.left }}px !important; top: {{ block.settings.top }}px !important;">
-              <header class="SectionHeader slide1_content" style="width: auto">
                 {{ slideshow_content }}
-              </header>
             </div>
           {%- endif -%}
         {%- endcapture -%}
@@ -340,6 +338,15 @@
           "id": "title",
           "label": "Heading",
           "default": "Tell your story"
+        },
+        {
+          "type": "range",
+          "id": "title_size",
+          "min": 8,
+          "max": 64,
+          "step": 1,
+          "label": "Size of the title",
+          "default": 28
         },
         {
           "type": "header",

@@ -35,10 +35,15 @@
 
           {%- assign image_url = product.images[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
+<!--           Alternate image sur hover seconde image // changer l'URL ou le numéro de la photo cf. plus haut
+ -->
           <img class="ProductItem__Image ProductItem__Image--alternate Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.images[1].alt | escape }}" data-image-id="{{ product.images[1].id }}">
         {%- endif -%}
 
         {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: product.featured_image -%}{%- endcapture -%}
+
+<!--         CHANGER ICI POUR L'IMAGE PRINCIPALE
+ -->
         {%- assign image_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
         <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_image.alt | escape }}" data-image-id="{{ product.featured_image.id }}">
@@ -85,7 +90,7 @@
         <h2 class="ProductItem__Title Heading">
           <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
         </h2>
-        
+
         <h3 class="ProductItem__Title Heading">
           {{ product.type }}
         </h3>

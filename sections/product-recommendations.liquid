@@ -33,7 +33,7 @@
     <div class="ProductRecommendations">
       {%- if recommendations.performed or product.metafields.sf_related_products.enabled == 1 -%}
         <div class="ProductListWrapper">
-          <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+          <div style="max-width: 1400px; margin: 0 auto;" class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
             {%- comment -%}
             If the merchant is explicitly using SuperFields, we use the hand-picked related products, otherwise we
             switch to the Shopify automatic recommendation

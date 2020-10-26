@@ -3,7 +3,7 @@
     "heading_color": "#5c5c5c",
     "text_color": "#5c5c5c",
     "text_light_color": "#939393",
-    "link_color": "#363636",
+    "link_color": "#5d5d5d",
     "background": "#ffffff",
     "light_background": "#ffffff",
     "product_on_sale_color": "#f94c43",
@@ -12,7 +12,7 @@
     "header_background": "#ffffff",
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
-    "footer_background": "#002d72",
+    "footer_background": "#002856",
     "footer_heading_color": "#ffffff",
     "footer_text_color": "#ffffff",
     "navigation_background": "#ffffff",
@@ -24,14 +24,14 @@
     "heading_font": "garamond_n4",
     "heading_size": "large",
     "uppercase_heading": false,
-    "text_font": "news_gothic_no_2_n4",
-    "base_text_font_size": 15,
+    "text_font": "montserrat_n3",
+    "base_text_font_size": 13,
     "currency_conversion_enabled": false,
     "currency_conversion_round_amounts": true,
     "currency_conversion_supported_currencies": "USD CAD EUR GBP",
     "currency_conversion_money_format": "money_format",
     "show_page_transition": true,
-    "show_button_transition": true,
+    "show_button_transition": false,
     "show_image_zooming": false,
     "show_element_staggering": false,
     "search_mode": "product",
@@ -50,7 +50,7 @@
     "share_image": "",
     "social_facebook": "https:\/\/www.facebook.com\/anthony.garcon.officiel\/",
     "social_twitter": "",
-    "social_pinterest": "#",
+    "social_pinterest": "https:\/\/www.pinterest.fr\/AnthonyGarconOfficiel",
     "social_instagram": "https:\/\/www.instagram.com\/anthony_garcon_officiel\/",
     "social_vimeo": "",
     "social_tumblr": "",
@@ -89,8 +89,7 @@
           "home_page_only": false,
           "background": "#002856",
           "text_color": "#ffffff",
-          "content": "Livraison offerte en France dès 300 €    |    Nos boutiques Archives, Capucines, Raspail et Ternes vous accueillent tous les dimanches de 11h à 19h",
-          "link": ""
+          "content": "Livraison offerte en France dès 300 €    |    Nos boutiques Archives, Capucines, Raspail et Ternes vous accueillent tous les dimanches de 11h à 19h"
         }
       },
       "header": {
@@ -99,14 +98,13 @@
           "1597342700843": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "Nos coupes",
+              "navigation_mega_menu": "",
               "push_1_image": "shopify:\/\/shop_images\/experience.jpg",
-              "push_1_heading": "Quelle est votre coupe ?",
-              "push_1_subheading": "Cliquez ici pour le découvrir",
+              "push_1_heading": "QUELLE EST VOTRE COUPE ?",
+              "push_1_subheading": "Découvrir",
               "push_1_url": "shopify:\/\/pages\/questionnaire-coupe",
-              "push_2_image": "shopify:\/\/shop_images\/coversiteok.jpg",
-              "push_2_heading": "Nos coupes en détails",
-              "push_2_subheading": "Cliquez ici pour en savoir plus",
+              "push_2_heading": "LE CONCEPT ANTHONY GARÇON",
+              "push_2_subheading": "En savoir plus",
               "push_2_url": "shopify:\/\/pages\/coupes"
             }
           },
@@ -114,20 +112,31 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "E-shop",
-              "push_1_image": "shopify:\/\/shop_images\/nav.jpg",
-              "push_1_heading": "Nouveautés",
-              "push_1_subheading": "découvrez les dernières tendances d'Anthony Garçon",
-              "push_1_url": "",
-              "push_2_image": "shopify:\/\/shop_images\/Untitled-2.png",
-              "push_2_heading": "Carte cadeau",
-              "push_2_subheading": "offrez la liberté de choisir",
-              "push_2_url": "shopify:\/\/collections\/carte-cadeau"
+              "push_1_heading": "",
+              "push_1_subheading": "",
+              "push_2_heading": "",
+              "push_2_subheading": ""
+            }
+          },
+          "1599567578009": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Boutiques",
+              "push_1_image": "shopify:\/\/shop_images\/Menu_adresses_boutiques_2.jpg",
+              "push_1_heading": "NOS ADRESSES",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/store-locator",
+              "push_2_image": "shopify:\/\/shop_images\/Menu_rdv_boutiques_3.jpg",
+              "push_2_heading": "PRENDRE RENDEZ-VOUS",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/prise-de-rdv"
             }
           }
         },
         "block_order": [
           "1597342700843",
-          "1597343641256"
+          "1597343641256",
+          "1599567578009"
         ],
         "settings": {
           "use_sticky_header": true,
@@ -150,8 +159,8 @@
           "footer-2": {
             "type": "newsletter",
             "settings": {
-              "title": "Recevez nos conseils de style adaptés à votre morphologie",
-              "content": "<p>Inscrivez-vous pour recevoir nos conseils personnalis&eacute;s et pour &ecirc;tre inform&eacute; en avant premi&egrave;re de nos nouveaut&eacute;s<\/p>"
+              "title": "Recevez nos conseils",
+              "content": "<p>Inscrivez-vous pour recevoir nos conseils personnalisés et pour être informé en avant première de nos nouveautés.<\/p>"
             }
           },
           "1578577569727": {
@@ -170,7 +179,7 @@
             "type": "text",
             "settings": {
               "title": "Qui est Anthony Garçon ?",
-              "content": "<p>Mauris suscipit lectus sit amet lacinia viverra. Maecenas mollis mauris vestibulum massa eleifend porta in sit amet ipsum. Pellentesque vitae egestas libero, sit amet vulputate eros. Nullam eget suscipit ex. Pellentesque quis nibh eleifend, euismod eros quis, dapibus mi. Pellentesque tempus vel lectus at interdum. Sed sagittis felis in massa eleifend convallis. Nunc eu rhoncus felis, sed tincidunt diam. Praesent elementum sapien non nulla aliquet fringilla.&nbsp;<br><a href=\"\/pages\/qui-sommes-nous\" title=\"Qui sommes nous ?\">En savoir plus.<\/a><\/p>",
+              "content": "<p>Une marque familiale qu&#x27;un père et son fils, les Garçon, ont pensé avec une idée en tête : proposer des costumes d&#x27;une qualité remarquable à des prix raisonnables.<br\/>Quatre coupes existent pour adapter nos costumes à votre morphologie : découvrez le &quot;fit parfait&quot;.<br\/><a href=\"\/pages\/marque\" title=\"Marque\">En savoir plus.<\/a><\/p>",
               "show_social_media": true
             }
           }
@@ -193,18 +202,18 @@
             "type": "image",
             "settings": {
               "tag": "",
-              "image": "shopify:\/\/shop_images\/coversiteok.jpg",
-              "mobile_image": "",
+              "image": "shopify:\/\/shop_images\/Header_PDG_copie.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Header_PDG_mobile.jpg",
               "apply_overlay": false,
               "left": 300,
               "top": 480,
               "content_position": "middleCenter",
               "subheading": "",
-              "title": "NEW IN | SS20",
-              "button_1_text": "voir plus",
-              "button_1_link": "shopify:\/\/pages\/questionnaire-coupe",
-              "button_2_text": "",
-              "button_2_link": ""
+              "title": "LA SÉLECTION PRINCE DE GALLES",
+              "title_size": 28,
+              "button_1_text": "Découvrir",
+              "button_1_link": "shopify:\/\/collections\/prince-de-galles",
+              "button_2_text": ""
             }
           }
         },
@@ -249,7 +258,7 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "Vous avez récemment consulté...",
           "show_product_info": true,
           "show_vendor": false,
@@ -259,50 +268,22 @@
       "collection-footer": {
         "type": "collection-footer",
         "settings": {
-          "show_section": true,
-          "image": "shopify:\/\/shop_images\/pantalons.jpg",
+          "show_section": false,
+          "image": "shopify:\/\/shop_images\/HP_Coupes_1800x1200px.jpg",
           "text_color": "#ffffff",
           "apply_overlay": true,
-          "title": "Texte de réassurance",
-          "content": "<p>Ins&eacute;rez ici un texte de r&eacute;assurance (une info importante qui sera pr&eacute;sente sur toutes les pages collections)<\/p>"
+          "title": "L'expérience digitale Anthony Garçon",
+          "content": "<p><strong>Livraison offerte<\/strong> d&egrave;s 300 euros.<br>Paiement en<strong> 3 fois<\/strong> sans frais.<br>Transactions <strong>s&eacute;curis&eacute;es<\/strong>.<br>Retours <strong>gratuits<\/strong>.<\/p>"
         }
       },
       "product-template": {
         "type": "product-template",
-        "blocks": {
-          "1583054216384": {
-            "type": "sizechart",
-            "settings": {
-              "type": "Coupe New York",
-              "page": "shopify:\/\/pages\/new-york"
-            }
-          },
-          "1583054255606": {
-            "type": "sizechart",
-            "settings": {
-              "type": "Coupe Paris",
-              "page": "shopify:\/\/pages\/paris"
-            }
-          },
-          "1583054368077": {
-            "type": "sizechart",
-            "settings": {
-              "type": "Coupe Napoli",
-              "page": "shopify:\/\/pages\/napoli"
-            }
-          }
-        },
-        "block_order": [
-          "1583054216384",
-          "1583054255606",
-          "1583054368077"
-        ],
         "settings": {
           "show_share_buttons": false,
           "show_vendor": false,
           "show_sku": false,
           "description_below_add_to_cart": false,
-          "selector_mode": "block",
+          "selector_mode": "dropdown",
           "show_color_swatch": true,
           "show_color_carousel": false,
           "show_quantity_selector": false,
@@ -314,9 +295,9 @@
           "stack_images": true,
           "show_thumbnails": true,
           "enable_image_zoom": true,
-          "tab_page_1_handle": "recrutement",
-          "tab_page_2_handle": "service-client",
-          "tab_page_3_handle": "livraison",
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "tab_page_3_handle": "",
           "reviews_enabled": false,
           "featured_image_size": "large"
         }
@@ -325,7 +306,7 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "heading": "Nos clients qui ont acheté ce produit ont également acheté",
+          "heading": "Complétez le look",
           "show_product_info": true,
           "show_vendor": false,
           "show_color_swatch": false
@@ -338,10 +319,10 @@
           "show_only_on_index": false,
           "show_only_for_visitors": false,
           "show_only_once": true,
-          "title": "Newsletter",
-          "content": "<p>Inscrivez-vous et recevez nos avantages exclusifs :<\/p>",
-          "show_newsletter": true,
-          "apparition_delay": 15
+          "title": "",
+          "content": "<p>Depuis le samedi 17 octobre, <strong>les horaires des boutiques parisiennes ont évolué<\/strong> pour s&#x27;adapter aux nouvelles réglementations : <strong>10h30-19h30 du lundi au samedi <\/strong>(certaines font une pause de 14h30 à 15h30), 11h-19h le dimanche pour les boutiques concernées.<\/p>",
+          "show_newsletter": false,
+          "apparition_delay": 0
         }
       },
       "list-collections-template": {
@@ -575,44 +556,31 @@
           "1596135313142-0": {
             "type": "highlight",
             "settings": {
-              "image": "shopify:\/\/shop_images\/icons8-handle-with-care-50.png",
+              "image": "shopify:\/\/shop_images\/livraison-offerte3.png",
               "title": "Livraison offerte",
-              "text": "<p>d&egrave;s 300 euros d'achat<\/p>",
-              "link": ""
+              "text": "<p>dès 300€ d&#x27;achat<\/p>"
             }
           },
           "1596135313142-1": {
             "type": "highlight",
             "settings": {
-              "image": "shopify:\/\/shop_images\/icons8-card-security-50.png",
-              "title": "Give us a call",
-              "text": "<p>+1 (201) 555-5555<\/p>",
-              "link": ""
-            }
-          },
-          "1596135313142-2": {
-            "type": "highlight",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/icons8-home-address-50.png",
-              "title": "Chat with us",
-              "text": "<p>We offer 24-hour chat support<\/p>",
-              "link": ""
+              "image": "shopify:\/\/shop_images\/card2_933c382a-1824-4cf0-8c12-3de41ef6f618.png",
+              "title": "Paiement sécurisé",
+              "text": "<p>possible en<strong> 3 fois sans frais<\/strong><\/p>"
             }
           },
           "1596135313142-3": {
             "type": "highlight",
             "settings": {
-              "image": "shopify:\/\/shop_images\/icons8-delivery-time-50.png",
-              "title": "Locations",
-              "text": "<p>Find a store near you<\/p>",
-              "link": ""
+              "image": "shopify:\/\/shop_images\/retour.png",
+              "title": "Retours",
+              "text": "<p>sous 14 jours<\/p>"
             }
           }
         },
         "block_order": [
           "1596135313142-0",
           "1596135313142-1",
-          "1596135313142-2",
           "1596135313142-3"
         ],
         "settings": {
@@ -633,10 +601,10 @@
             "type": "collection",
             "settings": {
               "tag": "",
-              "collection": "chemises-slim-fit",
-              "title": "",
+              "collection": "new-in",
+              "title": "Notre sélection",
               "grid_items_count": 8,
-              "button_text": "voir toutes les chemises"
+              "button_text": "Toutes les nouveautés"
             }
           }
         },
@@ -656,41 +624,34 @@
       },
       "1596137043205": {
         "type": "highlights-banners",
+        "disabled": true,
         "blocks": {
           "1596137043205-0": {
             "type": "highlight",
             "settings": {
-              "image": "",
               "title": "Free shipping",
-              "text": "<p>When you spend $100+<\/p>",
-              "link": ""
+              "text": "<p>When you spend $100+<\/p>"
             }
           },
           "1596137043205-1": {
             "type": "highlight",
             "settings": {
-              "image": "",
               "title": "Give us a call",
-              "text": "<p>+1 (201) 555-5555<\/p>",
-              "link": ""
+              "text": "<p>+1 (201) 555-5555<\/p>"
             }
           },
           "1596137043205-2": {
             "type": "highlight",
             "settings": {
-              "image": "",
               "title": "Chat with us",
-              "text": "<p>We offer 24-hour chat support<\/p>",
-              "link": ""
+              "text": "<p>We offer 24-hour chat support<\/p>"
             }
           },
           "1596137043205-3": {
             "type": "highlight",
             "settings": {
-              "image": "",
               "title": "Locations",
-              "text": "<p>Find a store near you<\/p>",
-              "link": ""
+              "text": "<p>Find a store near you<\/p>"
             }
           }
         },
@@ -714,47 +675,56 @@
       "1596137505914": {
         "type": "shop-the-look",
         "blocks": {
+          "1602683430922": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Nos_looks_Mazarine_f1fe5dcf-8728-45fd-ab3c-67b597fc71c2.jpg",
+              "dot_style": "light",
+              "product_1": "veste-mazarine",
+              "product_1_horizontal_position": 61,
+              "product_1_vertical_position": 62,
+              "product_2": "alexander",
+              "product_2_horizontal_position": 21,
+              "product_2_vertical_position": 75,
+              "product_3": "pull-victor-navy",
+              "product_3_horizontal_position": 57,
+              "product_3_vertical_position": 50
+            }
+          },
           "1596137505914-0": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/AG-CARRES_04.jpg",
+              "image": "shopify:\/\/shop_images\/Nos_looks.jpg",
               "dot_style": "light",
-              "product_1": "bonnie-gilet-1",
-              "product_1_horizontal_position": 30,
-              "product_1_vertical_position": 40,
-              "product_2": "cravate-beige-flag",
-              "product_2_horizontal_position": 45,
-              "product_2_vertical_position": 65,
-              "product_3": "pantalon-ox-navy",
-              "product_3_horizontal_position": 70,
-              "product_3_vertical_position": 50
+              "product_1": "costume-dickens",
+              "product_1_horizontal_position": 34,
+              "product_1_vertical_position": 54,
+              "product_2": "quatro-navy-m-slim-col-francais",
+              "product_2_horizontal_position": 56,
+              "product_2_vertical_position": 29,
+              "product_3": "jazzy-blue",
+              "product_3_horizontal_position": 43,
+              "product_3_vertical_position": 30
             }
           }
         },
         "block_order": [
+          "1602683430922",
           "1596137505914-0"
         ],
         "settings": {
-          "subheading": "Shop",
-          "title": "Our looks",
-          "show_mobile_product_info": false
-        }
-      },
-      "1596139158388": {
-        "type": "custom-html",
-        "settings": {
           "subheading": "",
-          "title": "",
-          "html": "BANDEAU INSTAGRAM CF ERES"
+          "title": "Nos looks",
+          "show_mobile_product_info": false
         }
       },
       "1597245715551": {
         "type": "custom-text",
         "settings": {
-          "bg_color": "#002856",
-          "border_color": "#ffffff",
-          "subheading": "Studio de retouche dédié  |  Savoir-faire français  |  le \"fit\" parfait",
-          "title": "Prêt à porter sur mesure",
+          "bg_color": "#0c2340",
+          "border_color": "#f8f8f8",
+          "subheading": "STUDIO DE RETOUCHE       |       LE \"FIT\" PARFAIT       |       SAVOIR-FAIRE FRANÇAIS",
+          "title": "PRÊT-À-PORTER À MESURE",
           "html": ""
         }
       },
@@ -765,27 +735,25 @@
             "type": "image",
             "settings": {
               "tag": "",
-              "image": "shopify:\/\/shop_images\/YVES_LAVALLETTE_K7A7252_copie_27b9cadc-372e-4cfc-b1af-0db60a9d89b6.jpg",
-              "mobile_image": "",
+              "image": "shopify:\/\/shop_images\/HP_Coupes_1800x1200px_1.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "Coupes",
               "position": 20,
               "coupe1": "London",
-              "link_coupe1": "shopify:\/\/collections\/coupe-london",
+              "link_coupe1": "#",
               "coupe2": "Paris",
-              "link_coupe2": "shopify:\/\/collections\/coupe-paris",
+              "link_coupe2": "#",
               "coupe3": "New-York",
-              "link_coupe3": "shopify:\/\/collections\/coupe-new-york",
-              "coupe4": "Naples",
-              "link_coupe4": "shopify:\/\/collections\/coupe-napoli",
+              "link_coupe3": "#",
+              "coupe4": "Napoli",
+              "link_coupe4": "#",
               "coupe5": "",
-              "link_coupe5": "",
-              "button_1_text": "Voir plus",
-              "button_1_link": "shopify:\/\/collections\/all",
-              "button_2_text": "",
-              "button_2_link": ""
+              "button_1_text": "LE CONCEPT",
+              "button_1_link": "shopify:\/\/pages\/coupes",
+              "button_2_text": "MA COUPE",
+              "button_2_link": "shopify:\/\/pages\/questionnaire-coupe"
             }
           }
         },
@@ -806,12 +774,11 @@
       "1597306880336": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": true,
           "background": "#002856",
           "text_color": "#ffffff",
-          "content": "LIVRAISON OFFERTE DES 300 EUROS D'ACHAT",
-          "link": ""
+          "content": "LIVRAISON OFFERTE DES 300 EUROS D'ACHAT"
         }
       },
       "1597336654037": {
@@ -821,21 +788,18 @@
             "type": "image",
             "settings": {
               "tag": "",
-              "image": "shopify:\/\/shop_images\/experience.jpg",
-              "mobile_image": "",
+              "image": "shopify:\/\/shop_images\/Boutique_archives_NB.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "picto": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/picto-xp.png?v=1597350516",
               "subheading": "METTEZ À MESURE VOTRE COSTUME",
-              "subheading2": "DANS LES 13 MAGASINS DES GRANDES",
-              "title": "L'expérience boutique.",
+              "subheading2": "DANS NOS 9 BOUTIQUES",
+              "title": "L'expérience boutique",
               "position": 25,
               "coupe5": "London",
-              "link_coupe5": "",
               "button_1_text": "Découvrir",
-              "button_1_link": "shopify:\/\/blogs\/news",
-              "button_2_text": "",
-              "button_2_link": ""
+              "button_1_link": "shopify:\/\/pages\/store-locator",
+              "button_2_text": ""
             }
           }
         },
@@ -859,9 +823,9 @@
           "background": "#ffffff",
           "text_color": "#1c1b1b",
           "title1": "Collection",
-          "title2": "automne-hiver",
+          "title2": "Automne-Hiver",
           "title3": "2020",
-          "content": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop <strong>publishing<\/strong> software like Aldus <strong>PageMaker<\/strong> including versions of Lorem Ipsum.<\/p>"
+          "content": "<p>Pour sa nouvelle collection Automne-Hiver 2020, Anthony Garçon évolue dans un univers littéraire alliant élégance intemporelle et modernité.<\/p><p>On y retrouve les signatures de marque - Prince de Galles et pied-de-poule - mis en lumière par des associations de couleurs automnales et des unis aux couleurs profondes.<\/p><p>Une collection qui fait également la part belle aux lignes plus informelles avec, notamment, des pantalons élastiqués et des cols roulés joués en colorama.... pour des looks <em>business<\/em> ou plus <em>casuals<\/em>, à mixer selon l&#x27;envie !<\/p>"
         }
       },
       "lookbook-images-template": {
@@ -869,25 +833,24 @@
         "settings": {
           "background": "#ffffff",
           "text_color": "#1c1b1b",
-          "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/YVES_LAVALLETTE_K7A7252_copie.jpg?v=1591876844",
-          "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_4.jpg?v=1583947609",
-          "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/pantalons.jpg?v=1583949036",
-          "content1": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "content2": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "content3": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "quote": "<p>\"Section sous-titre &agrave; renseigner au <strong>besoin.\"<\/strong><\/p>"
+          "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/look_11_0253_V2.jpg?v=1600765762",
+          "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_8_Rayuresbleues.ADLOOKBOOK.jpg?v=1600768446",
+          "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_12_Princeofpersia_Carreauxnavy_Gilet_Unidarkburgundy.AD.jpg?v=1600849413",
+          "content1": "<p><a title=\"https:\/\/anthonygarcon.com\/collections\/costumes\/products\/costume-sorbonne\" href=\"https:\/\/anthonygarcon.com\/collections\/costumes\/products\/costume-sorbonne\" target=\"_blank\">Costume Sorbonne<\/a> - <a title=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/chemise-slim-twill-blanc-m-col-francais\" href=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/chemise-slim-twill-blanc-m-col-francais\" target=\"_blank\">Chemise Twill blanc<\/a> - <a title=\"https:\/\/anthonygarcon.com\/collections\/cravates\/products\/cravate-tricot-gm-marine\" href=\"https:\/\/anthonygarcon.com\/collections\/cravates\/products\/cravate-tricot-gm-marine\" target=\"_blank\">Cravate Tricot GM navy<\/a> - <a title=\"https:\/\/anthonygarcon.com\/collections\/pochettes\/products\/pochette-costume-blanche\" href=\"https:\/\/anthonygarcon.com\/collections\/pochettes\/products\/pochette-costume-blanche\" target=\"_blank\">Pochette blanche<\/a><\/p>",
+          "content2": "<p><a title=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/rayure-bleu-m-slim-col-francais\" href=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/rayure-bleu-m-slim-col-francais\" target=\"_blank\">Chemise Rayures bleues<\/a><\/p>",
+          "content3": "<p><a title=\"https:\/\/anthonygarcon.com\/collections\/costumes\/products\/honore\" href=\"https:\/\/anthonygarcon.com\/collections\/costumes\/products\/honore\" target=\"_blank\">Costume<\/a> et <a title=\"https:\/\/anthonygarcon.com\/collections\/gilets\/products\/gilet-prince-of-persia\" href=\"https:\/\/anthonygarcon.com\/collections\/gilets\/products\/gilet-prince-of-persia\" target=\"_blank\">gilet <\/a>Prince of Persia - <a title=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/carreau-navy-m-slim-col-francais\" href=\"https:\/\/anthonygarcon.com\/collections\/chemises\/products\/carreau-navy-m-slim-col-francais\" target=\"_blank\">Chemise Carreau navy<\/a> - <a title=\"https:\/\/anthonygarcon.com\/collections\/cravates\/products\/cravate-uni-dark-burg-m\" href=\"https:\/\/anthonygarcon.com\/collections\/cravates\/products\/cravate-uni-dark-burg-m\" target=\"_blank\">Cravate Uni dark burgundy<\/a><\/p>",
+          "quote": "<p>Bel esprit &amp; perfect fit.<\/p>"
         }
       },
       "lookbook-divider-text": {
         "type": "lookbook-divider-text",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "height": 190,
           "background": "#002856",
           "text_color": "#ffffff",
           "title": "<p>This here is the <strong>title<\/strong><\/p>",
-          "content": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus. ”",
-          "link": ""
+          "content": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus. ”"
         }
       },
       "lookbook-images-block": {
@@ -896,36 +859,85 @@
           "1597683155963": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_3.jpg?v=1583947594",
-              "text_image": "London cut, lorem ipsum factored phalum"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_11_12_Mazarine_Victormarine_Pantalonassorti_Princeofpersia_Carreauxnavy_Gilet_Unidarkburgundy.ADLOOKBOOK.jpg?v=1600771314",
+              "text_image": "Veste et pantalon Mazarine - Col roulé Victor marine - Costume et gilet Prince of Persia - Chemise Carreau navy - Cravate Uni dark burgundy"
             }
           },
           "1597683362020": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/hp.jpg?v=1583947121",
-              "text_image": ""
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_2_Goncourt_Marconoir.AD.jpg?v=1600771363",
+              "text_image": "Pantalon Goncourt - Polo Marco noir"
             }
           },
           "1597683848527": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_desk.jpg?v=1583949284",
-              "text_image": ""
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_8_Christie_Victorbordeaux.AD.jpg?v=1600771609",
+              "text_image": "Veste Christie - Col roulé Victor bordeaux"
             }
           },
           "1597683864842": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/collection_3.jpg?v=1583947594",
-              "text_image": ""
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/PHOTOLOOKBOOKCROP.jpg?v=1600773380",
+              "text_image": "Veste Jane - Col roulé Victor beige - Pantalon Harry gris clair - Costume et gilet Pulitzer - Chemise Mérinos pétrol"
+            }
+          },
+          "1600773554102": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_13_14_Smokingcolchalenoir_Colcasseblanc_Noeudpapillonnoir_Smokingcolpointenavy_Colcasseblanc_Noeudpapillonnavy.ALOOKBOOK.jpg?v=1600773578",
+              "text_image": "Smoking col pointe navy - Chemise col cassé blanc - Noeud papillon navy - Smoking col chale noir - Chemise col cassé blanc - Noeud papillon noir"
             }
           },
           "1597684286278": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/chemise.jpg?v=1584031664",
-              "text_image": "Lorem Ipsum, chemise low cuts"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_7_Andersen_Victororange_AD_Web.jpg?v=1602840613",
+              "text_image": "Veste Andersen - Col roulé Victor orange"
+            }
+          },
+          "1600773864320": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_11_Mazarine_Victormarine_Pantalonassorti.AD.jpg?v=1600773643",
+              "text_image": "Veste et pantalon Mazarine - Col roulé Victor marine"
+            }
+          },
+          "1600773922990": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_9_Lamartine_Victorvert_Gabriel_Savana.ADLOOKBOOKCROP.jpg?v=1600774059",
+              "text_image": "Veste Lamartine - Col roulé Victor vert - Pantalon Gabriel - Pochette Savana"
+            }
+          },
+          "1600774278699": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_1_Dickens_Quatro_Jazzyblue.ALOOKBOOK.jpg?v=1600774211",
+              "text_image": "Costume Dickens - Chemise Quatro - Cravate Jazzy blue"
+            }
+          },
+          "1600774304405": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_4_5_Jane_Victorbeige_Harrygrisclair_Pulitzer_Merinospetrol_Gilet.AD.jpg?v=1600774220",
+              "text_image": "Costume et gilet Pulitzer - Chemise Mérinos pétrol - Veste Jane - Col roulé Victor beige"
+            }
+          },
+          "1600774322116": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_10_Balzac_Rayuresbleues_Gilet_Shadeofgrey_Lainearabesque.AD.jpg?v=1600774234",
+              "text_image": "Costume et gilet Balzac - Chemise Rayures bleues - Cravate Shade of grey - Pochette Laine arabesque"
+            }
+          },
+          "1600774337572": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_13_Smokingcolchalenoir_Colcasseblanc_Noeudpapillonnoir.ADLOOKBOOK.jpg?v=1600774243",
+              "text_image": "Smoking col chale noir - Chemise col cassé blanc - Noeud papillon noir"
             }
           }
         },
@@ -934,10 +946,17 @@
           "1597683362020",
           "1597683848527",
           "1597683864842",
-          "1597684286278"
+          "1600773554102",
+          "1597684286278",
+          "1600773864320",
+          "1600773922990",
+          "1600774278699",
+          "1600774304405",
+          "1600774322116",
+          "1600774337572"
         ],
         "settings": {
-          "title": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          "title": ""
         }
       },
       "marque_img_block": {
@@ -947,27 +966,27 @@
             "type": "image",
             "settings": {
               "image_right": true,
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
-              "title_image": "<p>L'exception <strong>Anthony Gar&ccedil;on<\/strong><\/p>",
-              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LaMarque_Innovation_Tradition.jpg?v=1600443195",
+              "title_image": "<p>INNOVATION &amp; TRADITION<\/p>\n<p><\/p>",
+              "text_image": "<p>En dessinant des costumes contemporains, confectionnés en prêt-à-porter mais entièrement ajustables, la marque se spécialise depuis 2005 dans le &laquo; prêt-à-porter à mesure &raquo;, garantie du &laquo; fit &raquo; parfait et de prix avantageux, bien avant les discours marketing actuels.<\/p>\n<p>Inspirées de l&rsquo;allure des dandys d&rsquo;autrefois, les collections prônent une certaine <br>élégance d&rsquo;hier, ce fameux style français qui est cher au créateur.<\/p>\n<p>Elles font cependant la part belle aux pièces en matières hi-tech, adaptées au quotidien mouvant des hommes d&rsquo;aujourd&rsquo;hui.<br>Des collections qui allient parfaitement innovation et tradition pour un homme qui choisit définitivement le style et l&rsquo;allure aux diktats de la mode éphémère.&nbsp;<\/p>"
             }
           },
           "1598268192943": {
             "type": "image",
             "settings": {
               "image_right": false,
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_mob.jpg?v=1583949321",
-              "title_image": "<p>L'autre <strong>exception<\/strong><\/p>",
-              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/look_24_1358_TestR.jpg?v=1601654785",
+              "title_image": "<p>UNE HISTOIRE DE FAMILLE<\/p>\n<p><\/p>",
+              "text_image": "<p>Chez les Garçon, le costume est une histoire de père et de fils.<\/p>\n<p>Depuis 2005, le premier, Yves, dirige l&rsquo;entreprise et gère le développement des boutiques.<br>Le second, Anthony, qui a donné son nom à la marque, est en charge de la direction artistique : il dessine les modèles et choisit les tissus.<\/p>\n<p>Ensemble, ils ont conçu le concept et sont aujourd&rsquo;hui à la tête de&nbsp;9 magasins en France dont&nbsp;7 à Paris.&nbsp;<\/p>"
             }
           },
           "1598428039201": {
             "type": "image",
             "settings": {
               "image_right": true,
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_london_mob.jpg?v=1583949321",
-              "title_image": "<p>Titre 3<\/p>",
-              "text_image": "<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo molestie eros, id dictum dolor aliquet nec. Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus Aenean non rhoncus felis, faucibus tristique ipsum. Sed cursus&rdquo;<\/p>"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LaMarque_L_engagement.jpg?v=1600442828",
+              "title_image": "<p>L'ENGAGEMENT<\/p>",
+              "text_image": "<p><strong>RESPECT DES CLIENTS ET DES PARTENAIRES<\/strong><\/p>\n<p>L&rsquo;entreprise familiale a à c&oelig;ur de respecter les hommes.<\/p>\n<p>Le client est au centre des préoccupations, les équipes sont mobilisées pour lui proposer une expérience d&rsquo;achat irréprochable.<br>Les fournisseurs, partenaires du quotidien, sont les mêmes depuis toujours.<\/p>\n<p>Tous sont contributeurs de son succès, que le créateur sait collectif.<\/p>\n<p><\/p>\n<p><strong>LE PRIX JUSTE, DEPUIS TOUJOURS<\/strong><\/p>\n<p>Depuis sa création, la marque a une ambition simple : traiter ses clients avec honnêteté, en leur proposant des produits aux juste prix, toute l&rsquo;année (de 330&euro; à 450&euro; pour un costume). Les marges raisonnables permettent de ne pas tomber dans la logique infernale des soldes et de redonner de la valeur au produit. Les larges gammes de pièces intemporelles sont destinées à être portées longtemps.&nbsp;<\/p>\n<p><\/p>\n<p><\/p>\n<p><strong>UN MODÈLE LOIN DE LA FAST-FASHION&nbsp;<\/strong><\/p>\n<p><\/p>\n<p>Les collections, toutes dessinées en France, sont produites en circuit court depuis plus de quinze ans : le sourcing est italien, la confection européenne et marocaine.<\/p>\n<p>Les tissus éco-responsables côtoient aujourd&rsquo;hui les étoffes hi-tech ou vintage.&nbsp;<\/p>"
             }
           }
         },
@@ -987,9 +1006,9 @@
             "type": "image",
             "settings": {
               "image_right": true,
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
-              "title_image": "<p>L'exception&nbsp;<strong>Anthony Gar&ccedil;on<\/strong><\/p>",
-              "text_image": "<p>Avoir quatre coupes qui assurent un fit parfait.<br><br>Paragraphe d&rsquo;explications concernant la diff&eacute;renciantion<br> d&rsquo;Anthony Gar&ccedil;on par rapport aux autres marques.<\/p>"
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LeConcept_fitparfait.jpg?v=1600854542",
+              "title_image": "<p>LE &laquo; FIT &raquo; <strong>PARFAIT<\/strong><\/p>",
+              "text_image": "<p>La marque se fournit en étoffes d&rsquo;une qualité exceptionnelle chez les plus prestigieuses filatures italiennes. Ce sont elles qui assurent ce tomb&eacute; si impeccable.<br>Ses costumes sont disponibles en 4 coupes conçues pour habiller les diverses morphologies masculines. Celles-ci sont ensuite totalement ajustables grâce au studio de retouches intégré de la marque. C&rsquo;est ce savoir-faire tailleur traditionnel, porté par des équipes attentives, à l&rsquo;&oelig;il expert, qui assure aux gentlemen cette allure irréprochable.&nbsp;<\/p>"
             }
           }
         },
@@ -1006,33 +1025,33 @@
           "1598350403662": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AGcalvi.jpg?v=1591785103",
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AG_AH2021_Look_1_Dickens_Quatro_Jazzyblue.HPCROP_a396ab06-7977-4ce3-9158-7bf10b0dda77.jpg?v=1600839681",
               "title_image": "Paris",
-              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+              "text_image": "<p><strong>PARIS<\/strong>&nbsp;-&nbsp;LA COUPE COURTE ET CINTRÉE<\/p>\n<p>Une coupe très actuelle, généralement conseillée aux hommes mesurant moins d&rsquo;1m80 car elle élance les gabarits de petite et moyenne tailles. Nous la suggérons également aux hommes un peu plus grands, à la silhouette longiligne qui souhaitent avoir une veste courte.<\/p>"
             }
           },
           "1598350445919": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_newyork_mob.jpg?v=1583949406",
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LeConcept_coupelondon.jpg?v=1600855061",
               "title_image": "London",
-              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+              "text_image": "<p><strong>LONDON<\/strong>&nbsp;-&nbsp;LA COUPE DROITE<\/p>\n<p>La rigueur British par excellence ! Une veste un peu plus longue, un tombé droit et une épaule structurée avec du padding, idéale pour les hommes grands et\/ou forts puisqu&rsquo;elle existe jusqu&rsquo;à la taille 62 (veste) et 55 (pantalon).&nbsp;<\/p>\n<p>Une allure irréprochable et une élégance intemporelle garanties !<\/p>"
             }
           },
           "1598350466524": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/slide_paris_mob.jpg?v=1583949160",
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LeConcept_coupenapoli_09a7df14-1d74-4952-8aa8-b8c702dc44d7.jpg?v=1600856787",
               "title_image": "Napoli",
-              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+              "text_image": "<p><strong>NAPOLI<\/strong>&nbsp;-&nbsp;LA COUPE SOUPLE ET NON ÉPAULÉE<\/p>\n<p>Le chic décontracté. Une coupe aux épaules arrondies qui convient bien aux profils plutôt athlétiques. L&rsquo;absence d&rsquo;épaulettes allège les carrures les plus développées et dynamise la silhouette des gabarits plus classiques. Symbole des rues de Rome, Florence ou Naples, c&rsquo;est la coupe coup de c&oelig;ur&nbsp;d'Anthony Gar&ccedil;on qu'il porte avec&nbsp;toujours autant de plaisir.<\/p>"
             }
           },
           "1598441831741": {
             "type": "image",
             "settings": {
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/AGcalvi.jpg?v=1591785103",
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/Leconcept_coupenewyork.jpg?v=1600856055",
               "title_image": "New-York",
-              "text_image": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+              "text_image": "<p><strong>NEW YORK<\/strong>&nbsp;-&nbsp;LA COUPE MODERNE ET STRUCTURÉE<br><br>Une coupe rassurante au fit universel. Des épaulettes qui structurent la silhouette, une taille subtilement marquée&nbsp;mais une liberté de mouvement grâce à de l&rsquo;espace au niveau de la carrure et du torse.<\/p>"
             }
           }
         },
@@ -1053,11 +1072,11 @@
             "type": "image",
             "settings": {
               "image_right": true,
-              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/oksite.jpg?v=1591886174",
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/LeConcept_trouvezvotrecoupe.jpg?v=1600857017",
               "title_image": "<p>Trouvez votre coupe<\/p>",
-              "text_image": "<p>Br&egrave;ve explication du questionnaire en quelques mots, <br>introduction et liens vers la page questionnaire directement :<\/p>",
+              "text_image": "<p>Notre &eacute;quipe a mis au point un questionnaire qui nous permet de vous indiquer la coupe la plus adapt&eacute;e &agrave; votre morphologie.<\/p>\n<p>Suivez le guide pour d&eacute;couvrir la coupe qui vous conviendra parfaitement :<\/p>",
               "link": "shopify:\/\/pages\/questionnaire-coupe",
-              "link_text": "<p>Faire le questionnaire<\/p>"
+              "link_text": "<p>R&eacute;pondre au&nbsp;questionnaire<\/p>"
             }
           }
         },
@@ -1070,11 +1089,11 @@
       },
       "1598442624831": {
         "type": "timeline",
+        "disabled": true,
         "blocks": {
           "1598442624831-0": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "New York",
               "subheading": "Sub-heading",
@@ -1085,7 +1104,6 @@
           "1598442624831-1": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "Paris",
               "subheading": "Sub-heading",
@@ -1096,7 +1114,6 @@
           "1598442624831-2": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "London",
               "subheading": "Sub-heading",
@@ -1107,7 +1124,6 @@
           "1598442645749": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "Napoli",
               "subheading": "Sub-heading",
@@ -1125,6 +1141,106 @@
         "settings": {
           "text_color": "#ffffff"
         }
+      },
+      "1599644565055": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "garamond_n4",
+          "heading_size": 24,
+          "feed_width": 85,
+          "html_area": "<b><\/b>"
+        }
+      },
+      "1599644632290": {
+        "type": "custom-html",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": ""
+        }
+      },
+      "1599648067230": {
+        "type": "custom-html",
+        "settings": {
+          "subheading": "Suivez-nous sur Instagram",
+          "title": "",
+          "html": "<br>"
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/new_logo_710760fc-b5f1-4d0f-b5b6-4ce0182cbc25.png",
+          "logo_max_width": 335,
+          "mobile_logo_max_width": 200,
+          "background_image": "shopify:\/\/shop_images\/AG_AH2021_Look_1_Dickens_Quatro_Jazzyblue3.jpg",
+          "text_color": "#ffffff",
+          "heading": "Coming Soon",
+          "show_newsletter_signup": true,
+          "newsletter_text": "<p>Pour pr&eacute;parer le lancement de notre nouvelle collection, notre e-shop est exceptionnellement ferm&eacute; aujourd'hui.<br>Vous pourrez d&eacute;couvrir son nouveau visage et les nouveaut&eacute;s d&egrave;s demain.<br><br>D'ici l&agrave;, vous pouvez en voir un peu plus sur <a href=\"https:\/\/www.instagram.com\/anthony_garcon_officiel\/\" title=\"https:\/\/www.instagram.com\/anthony_garcon_officiel\/\">Instagram<\/a>.<\/p>",
+          "show_social_sharing": false,
+          "social_message": "prévenez-moi"
+        }
+      },
+      "lookbook-images-blockb": {
+        "type": "lookbook-images-blockb",
+        "blocks": {
+          "1600851037654": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/Menu_adresses_boutiques_2.jpg?v=1600784224",
+              "text_image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1600851037654"
+        ],
+        "settings": {
+          "show_me": false,
+          "title": "I AM THE SECOND IMAG BLOCK"
+        }
+      },
+      "lookbook-images-blockc": {
+        "type": "lookbook-images-blockc",
+        "blocks": {
+          "1600850989649": {
+            "type": "image",
+            "settings": {
+              "image_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2542\/6766\/files\/Menu_adresses_boutiques_2.jpg?v=1600784224",
+              "text_image": "I am a new block"
+            }
+          }
+        },
+        "block_order": [
+          "1600850989649"
+        ],
+        "settings": {
+          "show_me": false,
+          "title": ""
+        }
+      },
+      "lookbook-divider-textb": {
+        "type": "lookbook-divider-textb",
+        "settings": {
+          "enable_bar": false,
+          "height": 100,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "title": "<p>This here is the title<\/p>",
+          "content": "Announce something here"
+        }
+      },
+      "lookbook-divider-textc": {
+        "type": "lookbook-divider-textc",
+        "settings": {
+          "enable_bar": false,
+          "height": 100,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "title": "<p>This here is the title<\/p>",
+          "content": "Announce something here"
+        }
       }
     },
     "content_for_index": [
@@ -1136,7 +1252,9 @@
       "1597306880336",
       "1596137505914",
       "1597336654037",
-      "1596139158388",
+      "1599644632290",
+      "1599648067230",
+      "1599644565055",
       "1596135313142",
       "1598442624831"
     ]

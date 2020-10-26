@@ -61,7 +61,13 @@
             {% endif %}
           {% endfor %}
           <button class="tablinks" onclick="openCity(event, 'Livraison')">Livraison</button>
-          <button class="tablinks" onclick="openCity(event, 'Entretien')">Entretien</button>
+          {% for tag in product.tags %}
+            {% if tag  contains "entretien" %}
+
+              <button class="tablinks" onclick="openCity(event, 'Entretien')">Entretien</button>
+            {% endif %}
+          {% endfor %}
+
         </div>
 
 
