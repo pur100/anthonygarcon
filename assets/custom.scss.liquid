@@ -17,6 +17,21 @@ src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
 // .Header{
 //   background-color: transparent !important;
 // }
+
+
+.SectionHeader__Description {
+    max-width: 88%;
+}
+
+.Footer  {
+  padding-top: 40px!important;
+  .Footer__Block {
+    margin-bottom: 35px !important;
+  }
+  .Footer__Aside {
+    margin-top: 10px;
+  }
+}
 #section-footer, #section-1599648067230 {
   .u-h6 {
     font-size: 18px !important;
@@ -38,6 +53,10 @@ src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
    }
   .MegaMenu__Title:hover {
      color: #939393 !important;
+  }
+
+  .MegaMenu__Item {
+      margin: 20px 16px;
   }
 
 }
@@ -202,7 +221,7 @@ src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
 // product sliders
 
 .ProductItem__Info {
-  font-size: 13px !important;
+  font-size: 16px !important;
 }
 .Section:not(.associated_products), .CollectionInner__Products {
 
@@ -215,6 +234,7 @@ src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
     padding-top: 10px;
     background-color: white;
     display: none;
+    font-size: 14px;
   }
 
   .ProductItem:hover .ProductItem__Info{
@@ -289,6 +309,10 @@ src: url('{{ "Montserrat-Regular.ttf" | asset_url }}');;
 // mobile
 
   @media screen and (max-width: 1240px) {
+
+    .ProductItem__Info {
+      display: block !important;
+    }
 
     // Boutique S6
 

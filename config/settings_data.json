@@ -34,7 +34,7 @@
     "show_button_transition": false,
     "show_image_zooming": false,
     "show_element_staggering": false,
-    "search_mode": "product",
+    "search_mode": "product,page",
     "product_show_price_on_hover": false,
     "product_show_secondary_image": true,
     "product_info_alignment": "center",
@@ -58,7 +58,7 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/Boomerangs_bleu_officiel.png",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/new_logo.png",
     "checkout_logo_position": "center",
@@ -202,17 +202,17 @@
             "type": "image",
             "settings": {
               "tag": "",
-              "image": "shopify:\/\/shop_images\/Header_PDG_copie.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Header_PDG_mobile.jpg",
+              "image": "shopify:\/\/shop_images\/Header_site_home_office_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Header_site_home_office_mobile.jpg",
               "apply_overlay": false,
               "left": 300,
-              "top": 480,
+              "top": 370,
               "content_position": "middleCenter",
               "subheading": "",
-              "title": "LA SÉLECTION PRINCE DE GALLES",
+              "title": "LA SÉLECTION HOME OFFICE",
               "title_size": 28,
               "button_1_text": "Découvrir",
-              "button_1_link": "shopify:\/\/collections\/prince-de-galles",
+              "button_1_link": "shopify:\/\/collections\/selection-home-office",
               "button_2_text": ""
             }
           }
@@ -273,11 +273,39 @@
           "text_color": "#ffffff",
           "apply_overlay": true,
           "title": "L'expérience digitale Anthony Garçon",
-          "content": "<p><strong>Livraison offerte<\/strong> d&egrave;s 300 euros.<br>Paiement en<strong> 3 fois<\/strong> sans frais.<br>Transactions <strong>s&eacute;curis&eacute;es<\/strong>.<br>Retours <strong>gratuits<\/strong>.<\/p>"
+          "content": "<p><strong>Livraison offerte<\/strong> dès 300 euros.<br\/>Paiement en<strong> 3 fois<\/strong> sans frais.<br\/>Transactions <strong>sécurisées<\/strong>.<br\/>Retours <strong>gratuits<\/strong>.<\/p>"
         }
       },
       "product-template": {
         "type": "product-template",
+        "blocks": {
+          "c63774e6-32e7-453c-b9b1-c4cde31f5dbd": {
+            "type": "sizechart",
+            "settings": {
+              "type": "Coupe New York",
+              "page": "https:\/\/anthonygarcon.com\/pages\/new-york"
+            }
+          },
+          "b23eccf3-19c3-4b54-b848-fe26f00ba918": {
+            "type": "sizechart",
+            "settings": {
+              "type": "Coupe Paris",
+              "page": "https:\/\/anthonygarcon.com\/pages\/paris"
+            }
+          },
+          "60fd9e11-be72-4089-8ce0-33bb63d7376e": {
+            "type": "sizechart",
+            "settings": {
+              "type": "Coupe Napoli",
+              "page": "shopify:\/\/pages\/napoli"
+            }
+          }
+        },
+        "block_order": [
+          "c63774e6-32e7-453c-b9b1-c4cde31f5dbd",
+          "b23eccf3-19c3-4b54-b848-fe26f00ba918",
+          "60fd9e11-be72-4089-8ce0-33bb63d7376e"
+        ],
         "settings": {
           "show_share_buttons": false,
           "show_vendor": false,
@@ -319,8 +347,8 @@
           "show_only_on_index": false,
           "show_only_for_visitors": false,
           "show_only_once": true,
-          "title": "",
-          "content": "<p>Depuis le samedi 17 octobre, <strong>les horaires des boutiques parisiennes ont évolué<\/strong> pour s&#x27;adapter aux nouvelles réglementations : <strong>10h30-19h30 du lundi au samedi <\/strong>(certaines font une pause de 14h30 à 15h30), 11h-19h le dimanche pour les boutiques concernées.<\/p>",
+          "title": "Ce qui évolue pendant le confinement",
+          "content": "<p>Notre <strong>e-shop reste ouvert<\/strong> et les délais d’expédition sont inchangés.<\/p><p>Du lundi au jeudi, de 12h à 17h, vous pouvez <a href=\"\/pages\/prise-de-rdv\" title=\"Prise de rendez-vous\"><strong>prendre rendez-vous ici<\/strong><\/a><strong> avec les boutiques de Malesherbes (Paris) et Boulogne-Billancourt<\/strong>.<\/p>",
           "show_newsletter": false,
           "apparition_delay": 0
         }
@@ -675,22 +703,6 @@
       "1596137505914": {
         "type": "shop-the-look",
         "blocks": {
-          "1602683430922": {
-            "type": "look",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Nos_looks_Mazarine_f1fe5dcf-8728-45fd-ab3c-67b597fc71c2.jpg",
-              "dot_style": "light",
-              "product_1": "veste-mazarine",
-              "product_1_horizontal_position": 61,
-              "product_1_vertical_position": 62,
-              "product_2": "alexander",
-              "product_2_horizontal_position": 21,
-              "product_2_vertical_position": 75,
-              "product_3": "pull-victor-navy",
-              "product_3_horizontal_position": 57,
-              "product_3_vertical_position": 50
-            }
-          },
           "1596137505914-0": {
             "type": "look",
             "settings": {
@@ -709,12 +721,11 @@
           }
         },
         "block_order": [
-          "1602683430922",
           "1596137505914-0"
         ],
         "settings": {
           "subheading": "",
-          "title": "Nos looks",
+          "title": "Focus sur... Dickens",
           "show_mobile_product_info": false
         }
       },
